@@ -1,11 +1,746 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Lácteos Tracker - Hipermaxi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Price Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+
+            --primary: #6D5DFC;
+            --primary-dark: #5746E8;
+
+            --bg: #F7F8FC;
+            --card: #FFFFFF;
+
+            --text: #151923;
+            --text-soft: #6B7280;
+
+            --border: #E7EAF3;
+
+            --success: #22C55E;
+            --danger: #EF4444;
+
+            --shadow:
+                0 20px 40px rgba(109, 93, 252, .08);
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+
+        }
+
+        .container {
+
+            max-width: 1440px;
+            margin: auto;
+            padding: 0 40px;
+
+        }
+
+        /* HEADER */
+
+        header {
+
+            height: 80px;
+            background: white;
+            border-bottom: 1px solid var(--border);
+
+            position: sticky;
+            top: 0;
+            z-index: 999;
+
+        }
+
+        .nav {
+
+            height: 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .logo {
+
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+        }
+
+        .logo-icon {
+
+            width: 42px;
+            height: 42px;
+
+            border-radius: 12px;
+
+            background: linear-gradient(135deg,
+                    var(--primary),
+                    #8B7BFF);
+
+        }
+
+        .logo-text {
+
+            font-weight: 800;
+            font-size: 18px;
+
+        }
+
+        .logo-sub {
+
+            font-size: 12px;
+            color: var(--text-soft);
+
+        }
+
+        .nav-right {
+
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+        }
+
+        .nav-chip {
+
+            padding: 10px 16px;
+
+            background: #F1F3FE;
+
+            color: var(--primary);
+
+            border-radius: 999px;
+
+            font-weight: 600;
+            font-size: 13px;
+
+        }
+
+        /* HERO */
+
+        .hero {
+
+            padding: 80px 0;
+
+            background:
+                radial-gradient(circle at top right,
+                    rgba(109, 93, 252, .15),
+                    transparent 35%);
+
+        }
+
+        .hero-grid {
+
+            display: grid;
+            grid-template-columns: 1fr 500px;
+            gap: 50px;
+
+            align-items: center;
+
+        }
+
+        .badge {
+
+            display: inline-flex;
+
+            padding: 8px 14px;
+
+            border-radius: 999px;
+
+            background: #EEF0FF;
+            color: var(--primary);
+
+            font-size: 12px;
+            font-weight: 700;
+
+            margin-bottom: 24px;
+
+        }
+
+        .hero h1 {
+
+            font-size: 64px;
+            line-height: 1.05;
+
+            font-weight: 800;
+
+            max-width: 700px;
+
+        }
+
+        .gradient {
+
+            background: linear-gradient(90deg,
+                    var(--primary),
+                    #9B8CFF);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .hero p {
+
+            margin-top: 24px;
+
+            font-size: 18px;
+            line-height: 1.8;
+
+            max-width: 680px;
+
+            color: var(--text-soft);
+
+        }
+
+        .hero-card {
+
+            background: white;
+
+            border-radius: 28px;
+
+            padding: 32px;
+
+            border: 1px solid var(--border);
+
+            box-shadow: var(--shadow);
+
+        }
+
+        /* METRICS */
+
+        .metrics {
+
+            margin-top: -20px;
+            margin-bottom: 40px;
+
+        }
+
+        .metrics-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+
+        }
+
+        .metric {
+
+            background: white;
+
+            padding: 28px;
+
+            border-radius: 24px;
+
+            border: 1px solid var(--border);
+
+            box-shadow: var(--shadow);
+
+        }
+
+        .metric small {
+
+            color: var(--text-soft);
+
+            font-size: 13px;
+
+        }
+
+        .metric h2 {
+
+            margin-top: 12px;
+
+            font-size: 42px;
+            font-weight: 800;
+
+        }
+
+        .metric span {
+
+            font-size: 13px;
+
+            color: var(--success);
+            font-weight: 600;
+
+        }
+
+        /* FILTERS */
+
+        .toolbar {
+
+            background: white;
+
+            padding: 20px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 24px;
+
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .search {
+
+            flex: 1;
+
+            height: 52px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 16px;
+
+            padding: 0 20px;
+
+        }
+
+        .chip {
+
+            height: 52px;
+
+            padding: 0 18px;
+
+            border: none;
+
+            background: #F7F8FC;
+
+            border-radius: 16px;
+
+            cursor: pointer;
+
+            font-weight: 600;
+
+        }
+
+        .chip.active {
+
+            background: var(--primary);
+            color: white;
+
+        }
+
+        /* CHART */
+
+        .chart-card {
+
+            background: white;
+
+            border-radius: 28px;
+
+            padding: 30px;
+
+            margin-bottom: 30px;
+
+            border: 1px solid var(--border);
+
+            box-shadow: var(--shadow);
+
+        }
+
+        .chart-header {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .fake-chart {
+
+            height: 280px;
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(180deg,
+                    rgba(109, 93, 252, .15),
+                    rgba(109, 93, 252, .03));
+
+        }
+
+        /* GRID PRODUCTOS */
+
+        .products {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fill, minmax(280px, 1fr));
+
+            gap: 24px;
+
+        }
+
+        .card {
+
+            background: white;
+
+            border-radius: 24px;
+
+            overflow: hidden;
+
+            border: 1px solid var(--border);
+
+            transition: .3s;
+
+        }
+
+        .card:hover {
+
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, .08);
+
+        }
+
+        .img {
+
+            height: 220px;
+
+            background: #F8F9FD;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .img img {
+
+            max-width: 80%;
+            max-height: 80%;
+
+            object-fit: contain;
+
+        }
+
+        .info {
+
+            padding: 24px;
+
+        }
+
+        .category {
+
+            font-size: 12px;
+
+            color: var(--primary);
+
+            font-weight: 700;
+
+            letter-spacing: .08em;
+
+            text-transform: uppercase;
+
+        }
+
+        .title {
+
+            margin-top: 12px;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            line-height: 1.5;
+
+            height: 48px;
+
+        }
+
+        .price {
+
+            margin-top: 18px;
+
+            font-size: 32px;
+
+            font-weight: 800;
+
+            color: var(--primary);
+
+        }
+
+        .old-price {
+
+            color: #999;
+
+            text-decoration: line-through;
+
+            margin-right: 10px;
+
+        }
+
+        .discount {
+
+            margin-top: 14px;
+
+            display: inline-flex;
+
+            padding: 6px 10px;
+
+            background: #FEE2E2;
+
+            color: #DC2626;
+
+            border-radius: 999px;
+
+            font-size: 12px;
+            font-weight: 700;
+
+        }
+
+        /* FOOTER */
+
+        footer {
+
+            margin-top: 80px;
+
+            padding: 30px;
+
+            text-align: center;
+
+            color: var(--text-soft);
+
+        }
+
+        @media(max-width:1200px) {
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media(max-width:768px) {
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .toolbar {
+                flex-wrap: wrap;
+            }
+
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Tracker de Precios de Lácteos</h1>
-    <p>Próximamente dashboard en vivo.</p>
+
+    <header>
+
+        <div class=" container nav">
+
+            <div class="logo">
+
+                <div class="logo-icon"></div>
+
+                <div>
+                    <div class="logo-text">
+                        Price Intelligence
+                    </div>
+
+                    <div class="logo-sub">
+                        Santa Cruz · Bolivia
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nav-right">
+
+                <div class="nav-chip">
+                    Actualización en tiempo real
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <div>
+
+                <div class="badge">
+                    MARKET INTELLIGENCE PLATFORM
+                </div>
+
+                <h1>
+
+                    Monitoreo de precios
+                    <span class="gradient">
+                        de lácteos
+                    </span>
+
+                    en tiempo real
+
+                </h1>
+
+                <p>
+                    Analiza variaciones, promociones,
+                    participación por categorías y tendencias
+                    de precios para toma de decisiones
+                    basadas en datos.
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <h3>
+                    Resumen Ejecutivo
+                </h3>
+
+                <br>
+
+                <p>
+                    Dashboard inspirado en plataformas
+                    Worldpanel, NielsenIQ y Numerator.
+                    Diseño enterprise orientado a análisis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="metrics">
+
+        <div class="container">
+
+            <div class="metrics-grid">
+
+                <div class="metric">
+                    <small>Productos monitoreados</small>
+                    <h2 id="stat-total">1.248</h2>
+                    <span>+12%</span>
+                </div>
+
+                <div class="metric">
+                    <small>Precio promedio</small>
+                    <h2>Bs 24.5</h2>
+                </div>
+
+                <div class="metric">
+                    <small>Promociones activas</small>
+                    <h2>351</h2>
+                </div>
+
+                <div class="metric">
+                    <small>Variación semanal</small>
+                    <h2>-2.1%</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="container">
+
+        <div class="toolbar">
+
+            <input class="search" placeholder="Buscar producto o marca...">
+
+            <button class="chip active">
+                Todos
+            </button>
+
+            <button class="chip">
+                Leches
+            </button>
+
+            <button class="chip">
+                Yogures
+            </button>
+
+            <button class="chip">
+                Quesos
+            </button>
+
+            <button class="chip">
+                Ofertas
+            </button>
+
+        </div>
+
+        <div class="chart-card">
+
+            <div class="chart-header">
+
+                <h3>Evolución del Mercado</h3>
+
+                <span>Últimos 30 días</span>
+
+            </div>
+
+            <div class="fake-chart"></div>
+
+        </div>
+
+        <div class="products" id="grid">
+
+            <!-- tarjetas dinámicas -->
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        Price Intelligence Dashboard © 2026
+
+    </footer>
+
 </body>
+
 </html>
