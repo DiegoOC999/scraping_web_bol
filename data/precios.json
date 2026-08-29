@@ -12381,37 +12381,6 @@
       }
     },
     {
-      "id": "fidalga-margarina-regia-410-g",
-      "id_producto": "sku-852084",
-      "producto_clave": "sku-852084",
-      "codigo_cadena": "margarina-regia-410-g",
-      "nombre": "Margarina Reyna 410 gr",
-      "nombre_cadena": "Margarina Regia 410 G",
-      "categoria": "Lacteos",
-      "subcategoria": "Mantequillas Y Margarinas",
-      "cadena": "Fidalga",
-      "sucursal": "",
-      "ciudad": "Santa Cruz",
-      "precio_oferta": 21.9,
-      "precio_regular": 21.9,
-      "descuento_bs": 0,
-      "descuento_pct": 0,
-      "tiene_descuento": false,
-      "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253Df387ecb_8256_48ae_99f6_3f2fddb15ce0.jpg%2526co%253D5%2526size%253D400x400&w=3840&q=75",
-      "url": "https://www.fidalga.com/collections/mantequilla/products/margarina-regia-410-g",
-      "historial": [
-        {
-          "fecha": "2026-08-28",
-          "cadena": "Fidalga",
-          "precio": 21.9
-        }
-      ],
-      "match": {
-        "metodo": "manual",
-        "codigo_hipermaxi": "852084"
-      }
-    },
-    {
       "id": "fidalga-mantequilla-light-regia-450-g",
       "id_producto": "sku-678732",
       "producto_clave": "sku-678732",
@@ -12440,37 +12409,6 @@
       "match": {
         "metodo": "manual",
         "codigo_hipermaxi": "678732"
-      }
-    },
-    {
-      "id": "fidalga-margarina-reyna-425-g",
-      "id_producto": "sku-852084",
-      "producto_clave": "sku-852084",
-      "codigo_cadena": "margarina-reyna-425-g",
-      "nombre": "Margarina Reyna 410 gr",
-      "nombre_cadena": "Margarina Reyna 425 Gr",
-      "categoria": "Lacteos",
-      "subcategoria": "Mantequillas Y Margarinas",
-      "cadena": "Fidalga",
-      "sucursal": "",
-      "ciudad": "Santa Cruz",
-      "precio_oferta": 20.0,
-      "precio_regular": 20.0,
-      "descuento_bs": 0,
-      "descuento_pct": 0,
-      "tiene_descuento": false,
-      "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253Df387ecb_8256_48ae_99f6_3f2fddb15ce0.jpg%2526co%253D5%2526size%253D400x400&w=3840&q=75",
-      "url": "https://www.fidalga.com/collections/mantequilla/products/margarina-reyna-425-g",
-      "historial": [
-        {
-          "fecha": "2026-08-28",
-          "cadena": "Fidalga",
-          "precio": 20.0
-        }
-      ],
-      "match": {
-        "metodo": "manual",
-        "codigo_hipermaxi": "852084"
       }
     },
     {
