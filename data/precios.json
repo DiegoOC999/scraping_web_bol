@@ -6,7 +6,7 @@
     "Hipermaxi Equipetrol - Santa Cruz"
   ],
   "total_registros": 584,
-  "total_productos_unicos": 544,
+  "total_productos_unicos": 534,
   "reglas": {
     "oferta_actual": "precio_oferta < precio_regular",
     "minimo_maximo": "calculados por el HTML sobre historial",
@@ -35,6 +35,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 9.7
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 9.7
         }
       ]
     },
@@ -49,15 +54,20 @@
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
       "precio_oferta": 17.5,
-      "precio_regular": 20.5,
-      "descuento_bs": 3.0,
-      "descuento_pct": 14.6,
-      "tiene_descuento": true,
+      "precio_regular": 17.5,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D4dae3ab_d41f_4b34_be0d_1f179a8cc261.jpg%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/674950/yogurt-kefir-delizia-frutilla-0-azucar-1000gr",
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 17.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 17.5
         }
@@ -85,6 +95,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 13.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 13.6
         }
       ]
     },
@@ -98,11 +113,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 18.5,
+      "precio_oferta": 20.9,
       "precio_regular": 20.9,
-      "descuento_bs": 2.4,
-      "descuento_pct": 11.5,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253Df387ecb_8256_48ae_99f6_3f2fddb15ce0.jpg%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/852084/margarina-reyna-410-gr",
       "historial": [
@@ -110,6 +125,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 18.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 20.9
         }
       ]
     },
@@ -133,6 +153,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 10.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 10.0
         }
@@ -160,6 +185,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 15.8
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 15.8
         }
       ]
     },
@@ -183,6 +213,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 2.3
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 2.3
         }
@@ -210,6 +245,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 56.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 56.0
         }
       ]
     },
@@ -233,6 +273,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 11.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 11.0
         }
@@ -260,6 +305,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 12.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 12.5
         }
       ]
     },
@@ -283,6 +333,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 1.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 1.6
         }
@@ -310,6 +365,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 1.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 1.6
         }
       ]
     },
@@ -333,6 +393,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 18.0
         }
@@ -360,6 +425,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 7.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 7.5
         }
       ]
     },
@@ -383,6 +453,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 9.3
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 9.3
         }
@@ -410,6 +485,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 10.2
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 10.2
         }
       ]
     },
@@ -433,6 +513,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 15.8
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 15.8
         }
@@ -460,6 +545,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 8.7
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 8.7
         }
       ]
     },
@@ -485,6 +575,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 14.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 14.5
         }
       ]
     },
@@ -498,8 +593,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 45.0,
-      "precio_regular": 45.0,
+      "precio_oferta": 30.0,
+      "precio_regular": 30.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -510,6 +605,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 45.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 30.0
         }
       ]
     },
@@ -523,8 +623,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 44.0,
-      "precio_regular": 44.0,
+      "precio_oferta": 29.0,
+      "precio_regular": 29.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -535,6 +635,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 44.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.0
         }
       ]
     },
@@ -573,11 +678,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 20.9,
+      "precio_oferta": 23.0,
       "precio_regular": 23.0,
-      "descuento_bs": 2.1,
-      "descuento_pct": 9.1,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D896663d_e403_4785_9b57_5aef5a8e4a40.jpg%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/552970/yogurt-biogurt-probiotico-lgg-frutilla-1-l",
       "historial": [
@@ -585,6 +690,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 20.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 23.0
         }
       ]
     },
@@ -598,11 +708,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 20.9,
+      "precio_oferta": 23.0,
       "precio_regular": 23.0,
-      "descuento_bs": 2.1,
-      "descuento_pct": 9.1,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253Db80a33e_14a7_46a5_ad3b_32f4f2918715.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/552971/yogurt-biogurt-probiotico-lgg-durazno-1-l",
       "historial": [
@@ -610,6 +720,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 20.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 23.0
         }
       ]
     },
@@ -633,6 +748,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 9.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 9.5
         }
@@ -660,6 +780,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 24.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 24.5
         }
       ]
     },
@@ -673,11 +798,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 20.9,
+      "precio_oferta": 23.0,
       "precio_regular": 23.0,
-      "descuento_bs": 2.1,
-      "descuento_pct": 9.1,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253De1d701c_dfde_4406_a6b3_39fab895821d.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/552972/yogurt-biogurt-probiotico-lgg-mango-1-l",
       "historial": [
@@ -685,6 +810,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 20.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 23.0
         }
       ]
     },
@@ -735,6 +865,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 14.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 14.5
         }
       ]
     },
@@ -758,6 +893,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 6.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 6.6
         }
@@ -835,6 +975,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 6.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 6.5
         }
       ]
     },
@@ -858,6 +1003,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 9.8
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 9.8
         }
@@ -885,6 +1035,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 17.8
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 17.8
         }
       ]
     },
@@ -908,6 +1063,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 15.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 15.6
         }
@@ -960,6 +1120,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 1.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 1.6
         }
       ]
     },
@@ -983,6 +1148,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 1.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 1.6
         }
@@ -1010,6 +1180,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 7.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 7.5
         }
       ]
     },
@@ -1035,6 +1210,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 2.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 2.3
         }
       ]
     },
@@ -1048,8 +1228,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 45.0,
-      "precio_regular": 45.0,
+      "precio_oferta": 30.0,
+      "precio_regular": 30.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -1060,6 +1240,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 45.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 30.0
         }
       ]
     },
@@ -1073,8 +1258,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 44.0,
-      "precio_regular": 44.0,
+      "precio_oferta": 29.0,
+      "precio_regular": 29.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -1085,6 +1270,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 44.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.0
         }
       ]
     },
@@ -1108,6 +1298,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 9.8
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 9.8
         }
@@ -1135,6 +1330,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 10.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 10.9
         }
       ]
     },
@@ -1158,6 +1358,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 15.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 15.6
         }
@@ -1185,6 +1390,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 12.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 12.5
         }
       ]
     },
@@ -1198,8 +1408,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 17.8,
-      "precio_regular": 17.8,
+      "precio_oferta": 15.0,
+      "precio_regular": 15.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -1210,6 +1420,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 17.8
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 15.0
         }
       ]
     },
@@ -1233,6 +1448,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 16.3
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 16.3
         }
@@ -1260,6 +1480,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 17.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 17.5
         }
       ]
     },
@@ -1285,6 +1510,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 2.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 2.3
         }
       ]
     },
@@ -1298,11 +1528,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 11.9,
+      "precio_oferta": 13.6,
       "precio_regular": 13.6,
-      "descuento_bs": 1.7,
-      "descuento_pct": 12.5,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D2af7a24_ae9a_4ab1_bf5d_8a3a233d873f.jpg%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/674669/leche-pil-con-cafe-vainilla-330-ml",
       "historial": [
@@ -1310,6 +1540,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 11.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 13.6
         }
       ]
     },
@@ -1360,6 +1595,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 1.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 1.6
         }
       ]
     },
@@ -1385,6 +1625,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 6.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 6.6
         }
       ]
     },
@@ -1408,6 +1653,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 1.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 1.6
         }
@@ -1460,6 +1710,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 10.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 10.9
         }
       ]
     },
@@ -1483,6 +1738,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 29.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 29.5
         }
@@ -1510,6 +1770,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 2.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 2.5
         }
       ]
     },
@@ -1533,6 +1798,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 2.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 2.0
         }
@@ -1585,6 +1855,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 7.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 7.5
         }
       ]
     },
@@ -1608,6 +1883,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 27.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 27.5
         }
@@ -1635,6 +1915,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 8.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 8.5
         }
       ]
     },
@@ -1658,6 +1943,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 14.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 14.5
         }
@@ -1685,6 +1975,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 2.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 2.5
         }
       ]
     },
@@ -1708,6 +2003,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 15.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 15.6
         }
@@ -1735,6 +2035,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 15.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 15.6
         }
       ]
     },
@@ -1760,6 +2065,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 25.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 25.5
         }
       ]
     },
@@ -1773,8 +2083,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 45.0,
-      "precio_regular": 45.0,
+      "precio_oferta": 30.0,
+      "precio_regular": 30.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -1785,6 +2095,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 45.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 30.0
         }
       ]
     },
@@ -1835,6 +2150,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 68.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 68.0
         }
       ]
     },
@@ -1858,6 +2178,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 4.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 4.5
         }
@@ -1885,6 +2210,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 7.2
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 7.2
         }
       ]
     },
@@ -1908,6 +2238,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 39.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 39.9
         }
@@ -1935,6 +2270,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 1.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 1.9
         }
       ]
     },
@@ -1958,6 +2298,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 11.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 11.5
         }
@@ -1985,6 +2330,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 4.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 4.5
         }
       ]
     },
@@ -2008,6 +2358,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 14.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 14.5
         }
@@ -2035,6 +2390,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 8.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 8.0
         }
       ]
     },
@@ -2048,8 +2408,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 15.0,
-      "precio_regular": 15.0,
+      "precio_oferta": 27.0,
+      "precio_regular": 27.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -2060,6 +2420,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 15.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 27.0
         }
       ]
     },
@@ -2083,6 +2448,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 39.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 39.9
         }
@@ -2110,6 +2480,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 7.2
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 7.2
         }
       ]
     },
@@ -2133,6 +2508,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 60.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 60.0
         }
@@ -2160,6 +2540,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 10.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 10.0
         }
       ]
     },
@@ -2185,6 +2570,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 4.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 4.5
         }
       ]
     },
@@ -2208,6 +2598,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 13.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 13.0
         }
@@ -2260,6 +2655,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 67.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 67.5
         }
       ]
     },
@@ -2283,6 +2683,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 13.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 13.9
         }
@@ -2335,6 +2740,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 14.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 14.9
         }
       ]
     },
@@ -2360,6 +2770,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 10.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 10.0
         }
       ]
     },
@@ -2383,6 +2798,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 11.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 11.5
         }
@@ -2435,6 +2855,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 7.2
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 7.2
         }
       ]
     },
@@ -2458,6 +2883,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 39.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 39.9
         }
@@ -2485,6 +2915,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 13.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 13.9
         }
       ]
     },
@@ -2508,6 +2943,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 6.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 6.0
         }
@@ -2535,6 +2975,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 8.2
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 8.2
         }
       ]
     },
@@ -2558,6 +3003,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 3.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 3.5
         }
@@ -2585,6 +3035,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 11.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 11.5
         }
       ]
     },
@@ -2610,6 +3065,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 60.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 60.0
         }
       ]
     },
@@ -2623,8 +3083,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 45.0,
-      "precio_regular": 45.0,
+      "precio_oferta": 31.0,
+      "precio_regular": 31.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -2635,6 +3095,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 45.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 31.0
         }
       ]
     },
@@ -2658,6 +3123,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 10.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 10.0
         }
@@ -2685,6 +3155,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 25.7
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 25.7
         }
       ]
     },
@@ -2708,6 +3183,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 12.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 12.5
         }
@@ -2735,6 +3215,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 32.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 32.0
         }
       ]
     },
@@ -2758,6 +3243,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 9.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 9.5
         }
@@ -2785,6 +3275,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 9.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 9.5
         }
       ]
     },
@@ -2808,6 +3303,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 9.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 9.5
         }
@@ -2835,6 +3335,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 9.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 9.5
         }
       ]
     },
@@ -2858,6 +3363,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 9.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 9.0
         }
@@ -2885,6 +3395,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 21.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 21.5
         }
       ]
     },
@@ -2910,6 +3425,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 2.7
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 2.7
         }
       ]
     },
@@ -2923,11 +3443,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 11.9,
+      "precio_oferta": 13.6,
       "precio_regular": 13.6,
-      "descuento_bs": 1.7,
-      "descuento_pct": 12.5,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D57aff9e_4c83_4a57_b99c_21df43812723.jpg%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/674670/leche-pil-con-cafe-moca-330-ml",
       "historial": [
@@ -2935,6 +3455,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 11.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 13.6
         }
       ]
     },
@@ -2958,6 +3483,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 8.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 8.9
         }
@@ -2985,6 +3515,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 55.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 55.5
         }
       ]
     },
@@ -3010,6 +3545,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 57.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 57.5
         }
       ]
     },
@@ -3033,6 +3573,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 57.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 57.5
         }
@@ -3085,6 +3630,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 37.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 37.5
         }
       ]
     },
@@ -3108,6 +3658,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 22.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 22.9
         }
@@ -3135,6 +3690,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 21.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 21.9
         }
       ]
     },
@@ -3158,6 +3718,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 23.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 23.0
         }
@@ -3185,6 +3750,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 8.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 8.0
         }
       ]
     },
@@ -3210,6 +3780,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 21.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 21.5
         }
       ]
     },
@@ -3233,6 +3808,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 21.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 21.5
         }
@@ -3285,6 +3865,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 29.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.5
         }
       ]
     },
@@ -3308,6 +3893,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 4.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 4.0
         }
@@ -3335,6 +3925,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 37.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 37.5
         }
       ]
     },
@@ -3360,6 +3955,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 22.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 22.6
         }
       ]
     },
@@ -3383,6 +3983,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 46.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 46.9
         }
@@ -3435,6 +4040,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
         }
       ]
     },
@@ -3448,11 +4058,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 12.5,
+      "precio_oferta": 14.0,
       "precio_regular": 14.0,
-      "descuento_bs": 1.5,
-      "descuento_pct": 10.7,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D80302c0_81bb_48d5_9b9e_753efd836b7a.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/679878/margarina-reyna-taza-215-gr",
       "historial": [
@@ -3460,6 +4070,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 12.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 14.0
         }
       ]
     },
@@ -3483,6 +4098,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 5.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 5.5
         }
@@ -3510,6 +4130,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 30.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 30.5
         }
       ]
     },
@@ -3533,6 +4158,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 30.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 30.9
         }
@@ -3560,6 +4190,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 21.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 21.9
         }
       ]
     },
@@ -3583,6 +4218,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 18.0
         }
@@ -3610,6 +4250,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 34.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 34.0
         }
       ]
     },
@@ -3633,6 +4278,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 30.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 30.9
         }
@@ -3660,6 +4310,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 8.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 8.9
         }
       ]
     },
@@ -3683,6 +4338,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 57.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 57.5
         }
@@ -3710,6 +4370,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 15.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 15.0
         }
       ]
     },
@@ -3733,6 +4398,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 18.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 18.5
         }
@@ -3760,6 +4430,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 18.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 18.5
         }
       ]
     },
@@ -3785,6 +4460,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
         }
       ]
     },
@@ -3798,11 +4478,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 11.0,
+      "precio_oferta": 12.3,
       "precio_regular": 12.3,
-      "descuento_bs": 1.3,
-      "descuento_pct": 10.6,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253Dffa2eab_e0dc_489d_917f_c3e1f1e8876e.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/678710/leche-deslactosada-pil-chocolate-800-ml",
       "historial": [
@@ -3810,6 +4490,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 11.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 12.3
         }
       ]
     },
@@ -3833,6 +4518,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 33.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 33.5
         }
@@ -3860,6 +4550,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 22.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 22.6
         }
       ]
     },
@@ -3883,6 +4578,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 30.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 30.5
         }
@@ -3910,6 +4610,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 21.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 21.9
         }
       ]
     },
@@ -3933,6 +4638,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 32.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 32.5
         }
@@ -3960,6 +4670,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 29.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.5
         }
       ]
     },
@@ -3983,6 +4698,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 7.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 7.5
         }
@@ -4010,6 +4730,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 23.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 23.0
         }
       ]
     },
@@ -4033,6 +4758,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 29.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 29.9
         }
@@ -4060,6 +4790,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 21.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 21.9
         }
       ]
     },
@@ -4073,11 +4808,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 11.0,
+      "precio_oferta": 12.3,
       "precio_regular": 12.3,
-      "descuento_bs": 1.3,
-      "descuento_pct": 10.6,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D6d1a305_fa8d_4389_b68f_fb5194198a26.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/678711/leche-pil-deslactosada-frutilla-800-ml",
       "historial": [
@@ -4085,6 +4820,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 11.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 12.3
         }
       ]
     },
@@ -4108,6 +4848,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 18.0
         }
@@ -4135,6 +4880,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 29.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.5
         }
       ]
     },
@@ -4158,6 +4908,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 29.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 29.5
         }
@@ -4185,6 +4940,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 5.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 5.5
         }
       ]
     },
@@ -4208,6 +4968,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 30.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 30.5
         }
@@ -4235,6 +5000,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 4.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 4.9
         }
       ]
     },
@@ -4258,6 +5028,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 29.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 29.5
         }
@@ -4285,6 +5060,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
         }
       ]
     },
@@ -4310,6 +5090,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 44.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 44.0
         }
       ]
     },
@@ -4333,6 +5118,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 33.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 33.5
         }
@@ -4385,6 +5175,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 37.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 37.5
         }
       ]
     },
@@ -4410,6 +5205,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 23.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 23.5
         }
       ]
     },
@@ -4433,6 +5233,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 24.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 24.0
         }
@@ -4485,6 +5290,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 8.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 8.9
         }
       ]
     },
@@ -4508,6 +5318,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 29.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 29.0
         }
@@ -4585,6 +5400,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 30.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 30.5
         }
       ]
     },
@@ -4608,6 +5428,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 46.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 46.9
         }
@@ -4635,6 +5460,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 29.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.5
         }
       ]
     },
@@ -4658,6 +5488,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 24.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 24.0
         }
@@ -4710,6 +5545,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 33.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 33.5
         }
       ]
     },
@@ -4733,6 +5573,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 32.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 32.5
         }
@@ -4760,6 +5605,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 23.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 23.5
         }
       ]
     },
@@ -4785,6 +5635,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 33.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 33.5
         }
       ]
     },
@@ -4808,6 +5663,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 18.0
         }
@@ -4885,6 +5745,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 1.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 1.5
         }
       ]
     },
@@ -4908,6 +5773,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 4.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 4.0
         }
@@ -4935,6 +5805,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
         }
       ]
     },
@@ -4958,6 +5833,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 29.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 29.0
         }
@@ -4985,6 +5865,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 29.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.0
         }
       ]
     },
@@ -5008,6 +5893,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 27.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 27.0
         }
@@ -5035,6 +5925,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 30.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 30.5
         }
       ]
     },
@@ -5058,6 +5953,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 29.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 29.0
         }
@@ -5085,6 +5985,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 27.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 27.0
         }
       ]
     },
@@ -5110,6 +6015,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 29.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.0
         }
       ]
     },
@@ -5133,6 +6043,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 1.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 1.5
         }
@@ -5185,6 +6100,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 44.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 44.0
         }
       ]
     },
@@ -5208,6 +6128,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 33.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 33.9
         }
@@ -5235,6 +6160,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 11.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 11.3
         }
       ]
     },
@@ -5258,6 +6188,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 5.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 5.5
         }
@@ -5285,6 +6220,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 5.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 5.5
         }
       ]
     },
@@ -5310,6 +6250,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 11.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 11.3
         }
       ]
     },
@@ -5333,6 +6278,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 13.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 13.5
         }
@@ -5383,6 +6333,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 1.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 1.5
         }
@@ -5485,6 +6440,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 18.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 18.5
         }
       ]
     },
@@ -5560,6 +6520,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 13.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 13.5
         }
       ]
     },
@@ -5608,6 +6573,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 11.3
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 11.3
         }
@@ -5660,6 +6630,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 4.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 4.0
         }
       ]
     },
@@ -5683,6 +6658,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 14.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 14.5
         }
@@ -5710,6 +6690,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 10.4
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 10.4
         }
       ]
     },
@@ -5733,6 +6718,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 10.4
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 10.4
         }
@@ -5760,6 +6750,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 3.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 3.3
         }
       ]
     },
@@ -5783,6 +6778,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 10.4
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 10.4
         }
@@ -5810,6 +6810,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 3.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 3.3
         }
       ]
     },
@@ -5833,6 +6838,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 3.3
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 3.3
         }
@@ -5910,6 +6920,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 65.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 65.0
         }
       ]
     },
@@ -5933,6 +6948,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 125.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 125.0
         }
@@ -5960,6 +6980,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 125.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 125.0
         }
       ]
     },
@@ -5978,11 +7003,16 @@
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
-      "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D8f9ced6_36f7_4e4a_a190_77532c32c9ad.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
+      "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D09d549a_d06f_4c2f_93ac_e7d8eb9eded1.png%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/783359/queso-crema-bonle-pil-andina-200-gr",
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 32.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 32.5
         }
@@ -6010,6 +7040,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 69.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 69.0
         }
       ]
     },
@@ -6033,6 +7068,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 79.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 79.0
         }
@@ -6060,6 +7100,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 279.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 279.0
         }
       ]
     },
@@ -6083,6 +7128,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 77.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 77.0
         }
@@ -6110,6 +7160,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 149.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 149.0
         }
       ]
     },
@@ -6133,6 +7188,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 126.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 126.0
         }
@@ -6160,6 +7220,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 149.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 149.0
         }
       ]
     },
@@ -6185,6 +7250,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 129.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 129.0
         }
       ]
     },
@@ -6208,6 +7278,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 25.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 25.0
         }
@@ -6260,6 +7335,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 240.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 240.0
         }
       ]
     },
@@ -6283,6 +7363,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 298.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 298.0
         }
@@ -6310,6 +7395,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 75.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 75.0
         }
       ]
     },
@@ -6333,6 +7423,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 35.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 35.0
         }
@@ -6360,6 +7455,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 55.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 55.0
         }
       ]
     },
@@ -6385,6 +7485,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 135.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 135.0
         }
       ]
     },
@@ -6408,6 +7513,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 118.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 118.0
         }
@@ -6460,6 +7570,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 245.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 245.0
         }
       ]
     },
@@ -6483,6 +7598,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 137.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 137.0
         }
@@ -6510,6 +7630,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 68.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 68.0
         }
       ]
     },
@@ -6533,6 +7658,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 129.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 129.0
         }
@@ -6560,6 +7690,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 68.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 68.0
         }
       ]
     },
@@ -6583,6 +7718,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 32.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 32.0
         }
@@ -6610,6 +7750,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 24.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 24.5
         }
       ]
     },
@@ -6635,6 +7780,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 27.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 27.0
         }
       ]
     },
@@ -6658,6 +7808,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 46.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 46.0
         }
@@ -6733,6 +7888,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 135.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 135.0
         }
@@ -6835,6 +7995,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 29.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.5
         }
       ]
     },
@@ -6858,6 +8023,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 99.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 99.0
         }
@@ -6885,6 +8055,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 129.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 129.0
         }
       ]
     },
@@ -6910,6 +8085,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 43.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 43.0
         }
       ]
     },
@@ -6933,6 +8113,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 28.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 28.5
         }
@@ -7010,6 +8195,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 45.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 45.0
         }
       ]
     },
@@ -7033,6 +8223,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 240.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 240.0
         }
@@ -7085,6 +8280,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 210.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 210.0
         }
       ]
     },
@@ -7108,6 +8308,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 46.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 46.5
         }
@@ -7135,6 +8340,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 45.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 45.0
         }
       ]
     },
@@ -7158,6 +8368,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 176.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 176.0
         }
@@ -7210,6 +8425,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 27.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 27.0
         }
       ]
     },
@@ -7260,6 +8480,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 162.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 162.0
         }
       ]
     },
@@ -7283,6 +8508,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 43.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 43.5
         }
@@ -7310,6 +8540,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 144.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 144.0
         }
       ]
     },
@@ -7335,6 +8570,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 23.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 23.9
         }
       ]
     },
@@ -7358,6 +8598,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 156.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 156.0
         }
@@ -7435,6 +8680,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 124.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 124.0
         }
       ]
     },
@@ -7458,6 +8708,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 159.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 159.0
         }
@@ -7485,6 +8740,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 21.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 21.9
         }
       ]
     },
@@ -7508,6 +8768,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 159.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 159.0
         }
@@ -7535,6 +8800,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 49.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 49.0
         }
       ]
     },
@@ -7558,6 +8828,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 139.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 139.0
         }
@@ -7585,6 +8860,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 162.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 162.0
         }
       ]
     },
@@ -7608,6 +8888,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 149.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 149.0
         }
@@ -7635,6 +8920,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 20.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 20.5
         }
       ]
     },
@@ -7658,6 +8948,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 176.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 176.0
         }
@@ -7710,6 +9005,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 63.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 63.0
         }
       ]
     },
@@ -7760,6 +9060,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 124.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 124.0
         }
       ]
     },
@@ -7783,6 +9088,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 38.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 38.0
         }
@@ -7810,6 +9120,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 149.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 149.0
         }
       ]
     },
@@ -7833,6 +9148,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 22.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 22.5
         }
@@ -7860,6 +9180,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 47.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 47.5
         }
       ]
     },
@@ -7883,6 +9208,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 139.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 139.0
         }
@@ -7910,6 +9240,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 139.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 139.0
         }
       ]
     },
@@ -7933,6 +9268,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 38.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 38.0
         }
@@ -7960,6 +9300,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 49.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 49.0
         }
       ]
     },
@@ -7985,6 +9330,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 28.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 28.0
         }
       ]
     },
@@ -8008,6 +9358,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 59.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 59.0
         }
@@ -8060,6 +9415,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 125.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 125.0
         }
       ]
     },
@@ -8083,6 +9443,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 138.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 138.0
         }
@@ -8110,6 +9475,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 42.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 42.5
         }
       ]
     },
@@ -8133,6 +9503,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 162.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 162.0
         }
@@ -8185,6 +9560,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 34.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 34.0
         }
       ]
     },
@@ -8208,6 +9588,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 20.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 20.5
         }
@@ -8235,6 +9620,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 295.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 295.0
         }
       ]
     },
@@ -8260,6 +9650,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 25.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 25.0
         }
       ]
     },
@@ -8283,6 +9678,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 27.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 27.5
         }
@@ -8335,6 +9735,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 265.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 265.0
         }
       ]
     },
@@ -8385,6 +9790,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 16.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 16.3
         }
       ]
     },
@@ -8410,6 +9820,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 30.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 30.9
         }
       ]
     },
@@ -8433,6 +9848,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 20.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 20.5
         }
@@ -8485,6 +9905,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 120.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 120.0
         }
       ]
     },
@@ -8510,6 +9935,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 31.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 31.5
         }
       ]
     },
@@ -8533,6 +9963,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 275.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 275.0
         }
@@ -8585,6 +10020,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 37.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 37.5
         }
       ]
     },
@@ -8608,6 +10048,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 240.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 240.0
         }
@@ -8635,6 +10080,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 27.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 27.5
         }
       ]
     },
@@ -8658,6 +10108,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 38.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 38.0
         }
@@ -8685,6 +10140,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 26.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 26.5
         }
       ]
     },
@@ -8708,6 +10168,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 37.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 37.5
         }
@@ -8735,6 +10200,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 230.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 230.0
         }
       ]
     },
@@ -8758,6 +10228,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 72.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 72.0
         }
@@ -8785,6 +10260,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 126.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 126.0
         }
       ]
     },
@@ -8808,6 +10288,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 20.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 20.5
         }
@@ -8835,6 +10320,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 38.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 38.0
         }
       ]
     },
@@ -8858,6 +10348,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 43.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 43.5
         }
@@ -8885,6 +10380,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 260.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 260.0
         }
       ]
     },
@@ -8908,6 +10408,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 60.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 60.0
         }
@@ -8935,6 +10440,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 28.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 28.5
         }
       ]
     },
@@ -8958,6 +10468,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 49.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 49.0
         }
@@ -8985,6 +10500,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 235.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 235.0
         }
       ]
     },
@@ -9008,6 +10528,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 23.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 23.5
         }
@@ -9060,6 +10585,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 43.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 43.5
         }
       ]
     },
@@ -9083,6 +10613,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 27.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 27.5
         }
@@ -9110,6 +10645,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 38.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 38.0
         }
       ]
     },
@@ -9135,6 +10675,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 124.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 124.0
         }
       ]
     },
@@ -9158,6 +10703,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 285.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 285.0
         }
@@ -9210,6 +10760,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 32.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 32.5
         }
       ]
     },
@@ -9233,6 +10788,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 23.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 23.5
         }
@@ -9260,6 +10820,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 139.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 139.0
         }
       ]
     },
@@ -9283,6 +10848,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 37.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 37.5
         }
@@ -9310,6 +10880,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 27.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 27.5
         }
       ]
     },
@@ -9333,6 +10908,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 235.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 235.0
         }
@@ -9360,6 +10940,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 37.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 37.5
         }
       ]
     },
@@ -9383,6 +10968,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 38.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 38.0
         }
@@ -9435,6 +11025,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 30.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 30.9
         }
       ]
     },
@@ -9460,6 +11055,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 139.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 139.0
         }
       ]
     },
@@ -9483,6 +11083,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 32.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 32.5
         }
@@ -9535,6 +11140,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 99.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 99.0
         }
       ]
     },
@@ -9585,6 +11195,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 14.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 14.6
         }
       ]
     },
@@ -9608,6 +11223,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 25.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 25.0
         }
@@ -9660,6 +11280,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 21.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 21.9
         }
       ]
     },
@@ -9683,6 +11308,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 15.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 15.0
         }
@@ -9710,6 +11340,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 16.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 16.5
         }
       ]
     },
@@ -9733,6 +11368,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 22.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 22.9
         }
@@ -9760,6 +11400,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 49.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 49.0
         }
       ]
     },
@@ -9785,6 +11430,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 17.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 17.0
         }
       ]
     },
@@ -9798,8 +11448,8 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 58.0,
-      "precio_regular": 58.0,
+      "precio_oferta": 28.0,
+      "precio_regular": 28.0,
       "descuento_bs": 0,
       "descuento_pct": 0,
       "tiene_descuento": false,
@@ -9810,6 +11460,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 58.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 28.0
         }
       ]
     },
@@ -9835,6 +11490,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 17.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 17.5
         }
       ]
     },
@@ -9848,11 +11508,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 10.5,
+      "precio_oferta": 11.5,
       "precio_regular": 11.5,
-      "descuento_bs": 1.0,
-      "descuento_pct": 8.7,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D8332c42_c2b7_4fbc_ada5_e4763914ca2f.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/678712/leche-deslactosada-pil-light-800-ml",
       "historial": [
@@ -9860,6 +11520,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 10.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 11.5
         }
       ]
     },
@@ -9883,6 +11548,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 25.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 25.0
         }
@@ -9910,6 +11580,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 35.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 35.0
         }
       ]
     },
@@ -9933,6 +11608,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 25.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 25.0
         }
@@ -9960,6 +11640,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 19.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 19.3
         }
       ]
     },
@@ -9983,6 +11668,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 14.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 14.5
         }
@@ -10010,6 +11700,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 16.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 16.6
         }
       ]
     },
@@ -10033,6 +11728,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 12.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 12.0
         }
@@ -10060,6 +11760,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 23.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 23.5
         }
       ]
     },
@@ -10083,6 +11788,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 8.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 8.9
         }
@@ -10110,6 +11820,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 122.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 122.0
         }
       ]
     },
@@ -10133,6 +11848,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 8.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 8.5
         }
@@ -10160,6 +11880,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 59.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 59.0
         }
       ]
     },
@@ -10183,6 +11908,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 11.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 11.5
         }
@@ -10210,6 +11940,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 29.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 29.9
         }
       ]
     },
@@ -10223,11 +11958,11 @@
       "cadena": "Hipermaxi",
       "sucursal": "Hipermaxi Equipetrol",
       "ciudad": "Santa Cruz",
-      "precio_oferta": 9.5,
+      "precio_oferta": 10.5,
       "precio_regular": 10.5,
-      "descuento_bs": 1.0,
-      "descuento_pct": 9.5,
-      "tiene_descuento": true,
+      "descuento_bs": 0,
+      "descuento_pct": 0,
+      "tiene_descuento": false,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253D4655968_0d24_4c42_a578_82cefd4374b8.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.hipermaxi.com/santa-cruz/hipermaxi-equipetrol/producto/404020/nueva-leche-pil-deslactosada-800-ml",
       "historial": [
@@ -10235,6 +11970,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 9.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 10.5
         }
       ]
     },
@@ -10258,6 +11998,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 25.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 25.5
         }
@@ -10285,6 +12030,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 16.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 16.6
         }
       ]
     },
@@ -10308,6 +12058,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 18.0
         }
@@ -10335,6 +12090,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 11.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 11.3
         }
       ]
     },
@@ -10358,6 +12118,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 19.3
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 19.3
         }
@@ -10385,6 +12150,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 43.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 43.0
         }
       ]
     },
@@ -10408,6 +12178,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 43.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 43.0
         }
@@ -10435,6 +12210,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 43.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 43.0
         }
       ]
     },
@@ -10458,6 +12238,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 18.0
         }
@@ -10485,6 +12270,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 16.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 16.5
         }
       ]
     },
@@ -10508,6 +12298,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 46.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 46.5
         }
@@ -10535,6 +12330,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 19.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 19.3
         }
       ]
     },
@@ -10558,6 +12358,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 7.3
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 7.3
         }
@@ -10585,6 +12390,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 19.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 19.3
         }
       ]
     },
@@ -10608,6 +12418,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 11.3
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 11.3
         }
@@ -10635,6 +12450,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 32.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 32.9
         }
       ]
     },
@@ -10658,6 +12478,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 36.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 36.5
         }
@@ -10685,6 +12510,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 19.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 19.3
         }
       ]
     },
@@ -10708,6 +12538,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 36.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 36.5
         }
@@ -10735,6 +12570,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 36.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 36.5
         }
       ]
     },
@@ -10758,6 +12598,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Hipermaxi",
+          "precio": 52.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Hipermaxi",
           "precio": 52.9
         }
@@ -10785,6 +12630,11 @@
           "fecha": "2026-08-28",
           "cadena": "Hipermaxi",
           "precio": 126.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Hipermaxi",
+          "precio": 126.0
         }
       ]
     },
@@ -10809,6 +12659,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 9.7
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 9.7
         }
@@ -10841,6 +12696,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 7.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 7.5
         }
       ],
       "match": {
@@ -10870,6 +12730,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 11.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 11.5
         }
       ],
       "match": {
@@ -10897,6 +12762,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 10.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 10.6
         }
@@ -10929,6 +12799,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 9.8
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 9.8
         }
       ],
       "match": {
@@ -10958,6 +12833,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 78.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 78.5
         }
       ],
       "match": {
@@ -10976,15 +12856,20 @@
       "sucursal": "",
       "ciudad": "Santa Cruz",
       "precio_oferta": 10.2,
-      "precio_regular": 10.2,
-      "descuento_bs": 0,
-      "descuento_pct": 0,
-      "tiene_descuento": false,
+      "precio_regular": 10.9,
+      "descuento_bs": 0.7,
+      "descuento_pct": 6.4,
+      "tiene_descuento": true,
       "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253Dc14c890_b59f_4f6f_b503_061729ae170a.webp%2526co%253D5%2526size%253D400x400&w=3840&q=75",
       "url": "https://www.fidalga.com/collections/leche/products/leche-con-avena-pil-de-800-ml",
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 10.2
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 10.2
         }
@@ -11017,6 +12902,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 7.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 7.5
         }
       ],
       "match": {
@@ -11044,6 +12934,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 7.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 7.5
         }
@@ -11075,6 +12970,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 9.3
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 9.3
         }
       ],
       "match": {
@@ -11102,6 +13002,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 1.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 1.9
         }
@@ -11133,6 +13038,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 9.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 9.5
         }
       ],
       "match": {
@@ -11160,6 +13070,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 9.8
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 9.8
         }
@@ -11191,6 +13106,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 9.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 9.6
         }
       ],
       "match": {
@@ -11218,6 +13138,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 12.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 12.5
         }
@@ -11250,6 +13175,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 7.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 7.5
         }
       ],
       "match": {
@@ -11277,6 +13207,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 11.7
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 11.7
         }
@@ -11309,6 +13244,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 14.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 14.0
         }
       ],
       "match": {
@@ -11336,6 +13276,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 2.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 2.0
         }
@@ -11367,6 +13312,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 10.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 10.0
         }
       ],
       "match": {
@@ -11394,6 +13344,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 1.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 1.9
         }
@@ -11425,6 +13380,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 30.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 30.5
         }
       ],
       "match": {
@@ -11454,6 +13414,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 30.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 30.5
         }
       ],
       "match": {
@@ -11472,15 +13437,20 @@
       "sucursal": "",
       "ciudad": "Santa Cruz",
       "precio_oferta": 20.5,
-      "precio_regular": 20.5,
-      "descuento_bs": 0,
-      "descuento_pct": 0,
-      "tiene_descuento": false,
+      "precio_regular": 21.9,
+      "descuento_bs": 1.4,
+      "descuento_pct": 6.4,
+      "tiene_descuento": true,
       "imagen": "",
       "url": "https://www.fidalga.com/collections/yogurt/products/yogurt-pil-frutilla-botella-1-l",
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 20.5
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 20.5
         }
@@ -11512,6 +13482,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 18.0
         }
       ],
       "match": {
@@ -11539,6 +13514,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 2.7
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 2.7
         }
@@ -11570,6 +13550,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 18.0
         }
       ],
       "match": {
@@ -11597,6 +13582,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 22.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 22.6
         }
@@ -11628,6 +13618,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 19.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 19.6
         }
       ],
       "match": {
@@ -11655,6 +13650,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 18.0
         }
@@ -11686,6 +13686,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 5.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 5.0
         }
       ],
       "match": {
@@ -11713,6 +13718,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 19.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 19.6
         }
@@ -11744,6 +13754,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 18.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 18.0
         }
       ],
       "match": {
@@ -11771,6 +13786,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 26.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 26.0
         }
@@ -11803,6 +13823,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 33.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 33.9
         }
       ],
       "match": {
@@ -11830,6 +13855,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 14.6
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 14.6
         }
@@ -11862,6 +13892,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 26.0
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 26.0
         }
       ],
       "match": {
@@ -11890,6 +13925,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 21.9
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 21.9
         }
@@ -11922,6 +13962,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 22.9
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 22.9
         }
       ],
       "match": {
@@ -11949,6 +13994,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 20.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 20.0
         }
@@ -11980,6 +14030,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 13.5
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 13.5
         }
       ],
       "match": {
@@ -12007,6 +14062,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 2.0
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 2.0
         }
@@ -12038,6 +14098,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 1.7
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 1.7
         }
       ],
       "match": {
@@ -12065,6 +14130,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 1.7
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 1.7
         }
@@ -12096,6 +14166,11 @@
           "fecha": "2026-08-28",
           "cadena": "Fidalga",
           "precio": 6.6
+        },
+        {
+          "fecha": "2026-09-04",
+          "cadena": "Fidalga",
+          "precio": 6.6
         }
       ],
       "match": {
@@ -12123,6 +14198,11 @@
       "historial": [
         {
           "fecha": "2026-08-28",
+          "cadena": "Fidalga",
+          "precio": 1.7
+        },
+        {
+          "fecha": "2026-09-04",
           "cadena": "Fidalga",
           "precio": 1.7
         }
