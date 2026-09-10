@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Secretos -- nunca subir claves ni credenciales
+.env
+*.env
+
+# Reportes generados (son output, no código -- no se versionan)
+backend/reportes/
+reportes/
+
+# Datos crudos intermedios del scraping
+backend/etl/scrapes_raw/
+scrapes_raw/
+
+# OS
+.DS_Store
+Thumbs.db
