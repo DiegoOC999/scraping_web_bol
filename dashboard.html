@@ -761,6 +761,7 @@
         </p>
     </main>
 
+    <script src="categorias.js"></script>
     <script>
         // ---- Único dato fijo del panel: quién es "nuestro" cliente. La lista ----
         // ---- de competidores se arma sola a partir de lo que traiga el pipeline. ----
@@ -1003,8 +1004,9 @@
         function renderCategorias() {
             const porCat = new Map();
             COMPARACIONES.filter(c => !c.esOutlier).forEach(c => {
-                if (!porCat.has(c.categoria)) porCat.set(c.categoria, []);
-                porCat.get(c.categoria).push(c);
+                const cat = CategoriasMacro.macroCategoria(c.categoria);
+                if (!porCat.has(cat)) porCat.set(cat, []);
+                porCat.get(cat).push(c);
             });
             const filas = [...porCat.entries()].map(([cat, items]) => {
                 const gapProm = items.reduce((a, b) => a + b.gap, 0) / items.length;
@@ -1194,14 +1196,17 @@
         }
 
         function setupCategoriaGlobal() {
-            const cats = [...new Set(TODAS_COMPARACIONES.map(c => c.categoria))].sort();
+            // Categoría "macro" (categorias.js), no la etiqueta cruda -- si no,
+            // el desplegable termina con cientos de nombres de campaña de
+            // marketing en vez de un puñado de categorías con sentido.
+            const cats = [...new Set(TODAS_COMPARACIONES.map(c => CategoriasMacro.macroCategoria(c.categoria)))].sort();
             if (catGlobal !== 'Todas' && !cats.includes(catGlobal)) catGlobal = 'Todas';
             $('cat-global').innerHTML = '<option value="Todas">Todas las categorías</option>' +
                 cats.map(c => `<option ${c === catGlobal ? 'selected' : ''}>${esc(c)}</option>`).join('');
         }
 
         function aplicarFiltroCategoria() {
-            COMPARACIONES = catGlobal === 'Todas' ? TODAS_COMPARACIONES : TODAS_COMPARACIONES.filter(c => c.categoria === catGlobal);
+            COMPARACIONES = catGlobal === 'Todas' ? TODAS_COMPARACIONES : TODAS_COMPARACIONES.filter(c => CategoriasMacro.macroCategoria(c.categoria) === catGlobal);
         }
 
         // Tabla de transparencia para los matches marcados esOutlier (ver
