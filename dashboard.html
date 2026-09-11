@@ -179,9 +179,15 @@
         }
 
         .chain-card {
-            border: 1px solid var(--border); border-radius: 20px; padding: 22px;
+            border: 1px solid var(--border); border-left: 4px solid var(--border); border-radius: 20px; padding: 22px;
             display: flex; flex-direction: column; gap: 14px; background: var(--soft)
         }
+
+        .chain-card.win { border-left-color: var(--green); background: var(--green-bg) }
+
+        .chain-card.lose { border-left-color: var(--red); background: var(--red-bg) }
+
+        .chain-card.flat { border-left-color: var(--primary) }
 
         .chain-card-head { display: flex; align-items: center; gap: 10px }
 
@@ -199,7 +205,17 @@
 
         .chain-card .stat-label { font-size: 12.5px; color: var(--muted); margin-top: -6px }
 
-        .chain-card .sku-count { font-size: 12px; color: var(--muted); border-top: 1px solid var(--border); padding-top: 10px }
+        .chain-card .split { display: flex; gap: 8px; flex-wrap: wrap; font-size: 12px; font-weight: 700; border-top: 1px solid var(--border); padding-top: 10px }
+
+        .chain-card .split span { padding: 3px 9px; border-radius: 999px }
+
+        .chain-card .split .w { color: var(--green); background: #fff }
+
+        .chain-card .split .l { color: var(--red); background: #fff }
+
+        .chain-card .split .f { color: var(--muted); background: #fff }
+
+        .chain-card .sku-count { font-size: 12px; color: var(--muted) }
 
         .select.cat-select { min-width: 210px }
 
@@ -352,11 +368,109 @@
         .cat-legend { display: flex; justify-content: space-between; margin-top: 4px; font-size: 11px; color: var(--muted) }
 
         /* ---- Trend chart ---- */
-        .chart-wrap svg { width: 100%; height: 290px }
+        .chart-wrap { position: relative }
+
+        .chart-wrap svg { width: 100%; height: 290px; display: block }
+
+        .chart-wrap circle { cursor: pointer }
+
+        /* Tooltip al pasar el cursor/dedo sobre un punto -- reemplaza el
+           <title> nativo del navegador, que tarda en aparecer y se ve
+           distinto en cada navegador. Con pocas fechas además se ve un
+           precio fijo arriba de cada punto (ver .point-label); con muchas
+           fechas ese texto fijo se sacaría de encima, así que el precio
+           solo se ve al pasar el cursor -- así no se satura. */
+        .chart-tooltip {
+            position: absolute; pointer-events: none; left: 0; top: 0;
+            background: #151923; color: #fff; font-size: 11.5px; font-weight: 700;
+            padding: 6px 10px; border-radius: 8px; white-space: nowrap; z-index: 5;
+            opacity: 0; transition: opacity .1s; box-shadow: 0 6px 16px rgba(0, 0, 0, .18);
+            transform: translate(-50%, -125%)
+        }
+
+        .chart-tooltip.show { opacity: 1 }
+
+        .point-label { font-size: 10.5px; font-weight: 800; pointer-events: none }
 
         .legend { display: flex; gap: 18px; margin-top: 12px; color: var(--muted); font-size: 12.5px; flex-wrap: wrap }
 
         .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px }
+
+        /* ---- Pestañas: arriba queda el resumen general (KPIs, filtros),
+           acá abajo se agrupa el detalle para no tener todo en una sola
+           página larga de scroll. ---- */
+        .tabs {
+            display: flex; gap: 4px; margin-top: 30px; border-bottom: 1px solid var(--border);
+            overflow-x: auto; -webkit-overflow-scrolling: touch
+        }
+
+        .tab-btn {
+            flex: none; padding: 13px 18px; border: none; background: none; cursor: pointer;
+            font-weight: 700; font-size: 13.5px; color: var(--muted); border-bottom: 3px solid transparent;
+            white-space: nowrap; transition: .15s; margin-bottom: -1px
+        }
+
+        .tab-btn:hover { color: var(--text) }
+
+        .tab-btn.active { color: var(--primary); border-bottom-color: var(--primary) }
+
+        .tab-panel[hidden] { display: none }
+
+        /* ---- Histórico por SKU ---- */
+        /* Sin contenedor flex alrededor (a diferencia del buscador de la
+           pestaña Productos, que se estira porque vive dentro de .toolbar),
+           así que acá el ancho se fija a mano: 100% del panel, no el ancho
+           angosto por defecto del navegador. */
+        .sku-picker { position: relative; width: 100% }
+
+        .sku-picker .search {
+            width: 100%; padding-left: 46px;
+            background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%239A96B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat 16px center
+        }
+
+        .sku-suggestions {
+            position: absolute; top: calc(100% + 8px); left: 0; right: 0; background: #fff;
+            border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow);
+            max-height: 340px; overflow-y: auto; z-index: 10; padding: 6px
+        }
+
+        .sku-suggestions button {
+            display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+            padding: 10px 12px; border: none; border-radius: 10px; background: none; cursor: pointer;
+            font: inherit; color: var(--text)
+        }
+
+        .sku-suggestions button + button { margin-top: 2px }
+
+        .sku-suggestions button:hover, .sku-suggestions button:focus-visible { background: var(--soft); outline: none }
+
+        .sku-suggestions img { width: 36px; height: 36px; border-radius: 8px; object-fit: contain; background: #F8F9FD; flex-shrink: 0 }
+
+        .sku-suggestions .sk-name { font-weight: 600; font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1 1 auto; min-width: 0 }
+
+        .sku-suggestions .sk-cat-tag { font-size: 11.5px; color: var(--muted); flex-shrink: 0 }
+
+        @media (max-width: 480px) {
+            .sku-picker .search { padding-left: 40px; background-position: 12px center }
+            .sku-suggestions .sk-cat-tag { display: none }
+        }
+
+        .sku-snapshot { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; flex-wrap: wrap }
+
+        .sku-snapshot img { width: 64px; height: 64px; border-radius: 14px; object-fit: contain; background: #F8F9FD; flex-shrink: 0 }
+
+        .sku-snapshot .sk-title { font-weight: 800; font-size: 16px }
+
+        .sku-snapshot .sk-cat { color: var(--muted); font-size: 12.5px; margin-top: 2px }
+
+        .sku-price-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 22px }
+
+        .sku-price-chip {
+            display: flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 14px;
+            border: 1px solid var(--border); font-size: 12.5px
+        }
+
+        .sku-price-chip strong { font-size: 14px }
 
         @media(max-width:1000px) {
             .metrics-grid { grid-template-columns: repeat(2, 1fr) }
@@ -387,6 +501,7 @@
             .btn-primary, .btn-secondary, .btn-more { font-size: 12.5px; padding: 0 14px }
             .top5-img { width: 42px; height: 42px }
             #reporte-frame { height: 380px }
+            .tab-btn { padding: 10px 13px; font-size: 12px }
         }
     </style>
 </head>
@@ -465,118 +580,151 @@
             </article>
         </section>
 
-        <section class="panel">
-            <div class="panel-head">
-                <div>
-                    <h2>Tendencia de precios</h2>
-                    <p class="muted">Precio promedio propio vs. competencia, sobre los SKUs comparados, día a día.</p>
-                </div>
-            </div>
-            <div class="chart-wrap" id="trend-chart"></div>
-            <div class="legend" id="trend-legend"></div>
-        </section>
+        <div class="tabs" role="tablist">
+            <button class="tab-btn active" data-tab="resumen" type="button">Resumen</button>
+            <button class="tab-btn" data-tab="alertas" type="button">Alertas</button>
+            <button class="tab-btn" data-tab="productos" type="button">Productos</button>
+            <button class="tab-btn" data-tab="historico" type="button">Histórico por SKU</button>
+        </div>
 
-        <section class="panel">
-            <div class="panel-head">
-                <div>
-                    <h2>Top 5</h2>
-                    <p class="muted">Mejor posicionados vs. mayor riesgo, entre los SKUs comparados ahora mismo.</p>
+        <div class="tab-panel" data-tab="resumen">
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Comparación por cadena</h2>
+                        <p class="muted">Frente a cada competidor seleccionado: promedio de brecha, y sobre cuántos SKUs
+                            estamos más baratos, iguales o más caros. Ordenado de mayor riesgo a mayor ventaja.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="top5-grid">
-                <div>
-                    <p class="muted" style="margin-bottom:10px;font-weight:700">✅ Mejor posicionados</p>
-                    <div class="top5-list" id="top5-win"></div>
-                </div>
-                <div>
-                    <p class="muted" style="margin-bottom:10px;font-weight:700">⚠️ Mayor riesgo</p>
-                    <div class="top5-list" id="top5-lose"></div>
-                </div>
-            </div>
-        </section>
+                <div class="chain-cards" id="chain-cards"></div>
+            </section>
 
-        <section class="panel">
-            <div class="panel-head">
-                <div>
-                    <h2>Comparación por cadena</h2>
-                    <p class="muted">Cuánto más caros o baratos somos frente a cada competidor seleccionado, y sobre
-                        cuántos SKUs se está comparando contra esa cadena puntual.</p>
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Dispersión por categoría</h2>
+                        <p class="muted">Brecha de precio promedio, ordenada de mayor riesgo a mayor ventaja.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="chain-cards" id="chain-cards"></div>
-        </section>
+                <div class="cat-scale">
+                    <div></div>
+                    <div class="scale-labels"><span>← Más barato</span><span>Igual</span><span>Más caro →</span></div>
+                    <div></div>
+                </div>
+                <div class="cat-rows" id="cat-rows"></div>
+            </section>
 
-        <section class="panel">
-            <div class="panel-head">
-                <div>
-                    <h2>Dispersión por categoría</h2>
-                    <p class="muted">Brecha de precio promedio, ordenada de mayor riesgo a mayor ventaja.</p>
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Tendencia de precios</h2>
+                        <p class="muted">Precio promedio propio vs. competencia, sobre los SKUs comparados, día a día.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="cat-scale">
-                <div></div>
-                <div class="scale-labels"><span>← Más barato</span><span>Igual</span><span>Más caro →</span></div>
-                <div></div>
-            </div>
-            <div class="cat-rows" id="cat-rows"></div>
-        </section>
+                <div class="chart-wrap" id="trend-chart"></div>
+                <div class="legend" id="trend-legend"></div>
+            </section>
 
-        <section class="panel">
-            <div class="panel-head">
-                <div>
-                    <h2>Alertas de precio agresivo</h2>
-                    <p class="muted">Productos donde la competencia está más barata por encima del umbral — candidatos
-                        a revisar primero.</p>
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Top 5</h2>
+                        <p class="muted">Mejor posicionados vs. mayor riesgo, entre los SKUs comparados ahora mismo.</p>
+                    </div>
                 </div>
-                <div class="toolbar" style="margin:0">
-                    <select class="select" id="umbral">
-                        <option value="5">Umbral: 5%+</option>
-                        <option value="10" selected>Umbral: 10%+</option>
-                        <option value="20">Umbral: 20%+</option>
+                <div class="top5-grid">
+                    <div>
+                        <p class="muted" style="margin-bottom:10px;font-weight:700">✅ Mejor posicionados</p>
+                        <div class="top5-list" id="top5-win"></div>
+                    </div>
+                    <div>
+                        <p class="muted" style="margin-bottom:10px;font-weight:700">⚠️ Mayor riesgo</p>
+                        <div class="top5-list" id="top5-lose"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-panel" data-tab="alertas" hidden>
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Alertas de precio agresivo</h2>
+                        <p class="muted">Productos donde la competencia está más barata por encima del umbral — candidatos
+                            a revisar primero.</p>
+                    </div>
+                    <div class="toolbar" style="margin:0">
+                        <select class="select" id="umbral">
+                            <option value="5">Umbral: 5%+</option>
+                            <option value="10" selected>Umbral: 10%+</option>
+                            <option value="20">Umbral: 20%+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Nuestro precio</th>
+                                <th>Competencia (mejor precio)</th>
+                                <th>Diferencia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="alert-body"></tbody>
+                    </table>
+                </div>
+                <p class="state" id="alert-empty" style="display:none">Ningún producto supera este umbral ahora mismo.</p>
+            </section>
+        </div>
+
+        <div class="tab-panel" data-tab="productos" hidden>
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Comparación producto por producto</h2>
+                        <p class="muted" id="count">0 productos</p>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <input class="search" id="search" placeholder="Buscar producto...">
+                    <select class="select" id="sort">
+                        <option value="gap-desc">Mayor desventaja primero</option>
+                        <option value="gap-asc">Mayor ventaja primero</option>
+                        <option value="name">Nombre A-Z</option>
                     </select>
                 </div>
-            </div>
-            <div class="table-scroll">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Categoría</th>
-                            <th>Nuestro precio</th>
-                            <th>Competencia (mejor precio)</th>
-                            <th>Diferencia</th>
-                        </tr>
-                    </thead>
-                    <tbody id="alert-body"></tbody>
-                </table>
-            </div>
-            <p class="state" id="alert-empty" style="display:none">Ningún producto supera este umbral ahora mismo.</p>
-        </section>
-
-        <section class="panel">
-            <div class="panel-head">
-                <div>
-                    <h2>Comparación producto por producto</h2>
-                    <p class="muted" id="count">0 productos</p>
+                <div class="state" id="status">Cargando data/precios.json...</div>
+                <div class="table-scroll" id="table-wrap" style="display:none">
+                    <table>
+                        <thead id="thead"></thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
                 </div>
-            </div>
-            <div class="toolbar">
-                <input class="search" id="search" placeholder="Buscar producto...">
-                <select class="select" id="sort">
-                    <option value="gap-desc">Mayor desventaja primero</option>
-                    <option value="gap-asc">Mayor ventaja primero</option>
-                    <option value="name">Nombre A-Z</option>
-                </select>
-            </div>
-            <div class="state" id="status">Cargando data/precios.json...</div>
-            <div class="table-scroll" id="table-wrap" style="display:none">
-                <table>
-                    <thead id="thead"></thead>
-                    <tbody id="tbody"></tbody>
-                </table>
-            </div>
-            <div class="load-more-wrap" id="table-load-more"></div>
-        </section>
+                <div class="load-more-wrap" id="table-load-more"></div>
+            </section>
+        </div>
+
+        <div class="tab-panel" data-tab="historico" hidden>
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Histórico por SKU</h2>
+                        <p class="muted">Buscá un producto puntual para ver su evolución de precio por cadena, día a
+                            día — no depende de los filtros de arriba, siempre muestra todas las cadenas trackeadas
+                            para ese producto.</p>
+                    </div>
+                </div>
+                <div class="sku-picker">
+                    <input class="search" id="sku-search" placeholder="Buscar producto por nombre..." autocomplete="off">
+                    <div class="sku-suggestions" id="sku-suggestions" hidden></div>
+                </div>
+                <div id="sku-detail" style="margin-top:24px">
+                    <p class="state">Buscá un producto arriba para ver su histórico de precio por cadena.</p>
+                </div>
+            </section>
+        </div>
 
         <p class="foot-note">
             Cliente: <strong id="cliente-nombre">Farmacorp</strong> · Competidores disponibles:
@@ -589,7 +737,7 @@
     <script>
         // ---- Único dato fijo del panel: quién es "nuestro" cliente. La lista ----
         // ---- de competidores se arma sola a partir de lo que traiga el pipeline. ----
-        const DATA_URL = './data-farmacorp/precios.json';
+        const DATA_URL = './data/precios.json';
         const CLIENTE = 'Farmacorp';
         // API local (postgres_migration/etl/api.py, corrida con
         // `uvicorn api:app --port 8000`) -- de ahí sale el PDF del botón
@@ -716,18 +864,34 @@
                 const gapProm = gaps.reduce((a, b) => a + b, 0) / gaps.length;
                 const cls = gapProm > 1 ? 'lose' : gapProm < -1 ? 'win' : 'flat';
                 const etiqueta = gapProm > 1 ? 'más caros que' : gapProm < -1 ? 'más baratos que' : 'prácticamente igual a';
-                return `
-                <div class="chain-card">
-                    <div class="chain-card-head">${chainLogoImg(c, 'chain-card-logo')}</div>
-                    <div>
-                        <div class="stat ${cls}">${gapProm > 0 ? '+' : ''}${gapProm.toFixed(1)}%</div>
-                        <div class="stat-label">somos ${etiqueta} ${esc(c)}</div>
-                    </div>
-                    <div class="sku-count">${matches.length} SKU${matches.length === 1 ? '' : 's'} comparados con ${esc(c)}</div>
-                </div>`;
+                // Desglose SKU a SKU contra ESTA cadena puntual (no el promedio):
+                // cuántos ganamos, cuántos perdemos, cuántos están prácticamente
+                // parejos -- el promedio solo puede esconder, ej., 40% ganados y
+                // 60% perdidos por mucho, que resulta en un promedio chico.
+                let win = 0, lose = 0, flat = 0;
+                gaps.forEach(g => { if (g > 1) lose++; else if (g < -1) win++; else flat++; });
+                return { c, gapProm, cls, etiqueta, matches, win, lose, flat };
             }).filter(Boolean);
+
+            // Peor primero: lo que más urge revisar arriba, sin que el gerente
+            // tenga que escanear todas las tarjetas para encontrar el riesgo.
+            tarjetas.sort((a, b) => b.gapProm - a.gapProm);
+
             el.innerHTML = tarjetas.length
-                ? tarjetas.join('')
+                ? tarjetas.map(t => `
+                <div class="chain-card ${t.cls}">
+                    <div class="chain-card-head">${chainLogoImg(t.c, 'chain-card-logo')}</div>
+                    <div>
+                        <div class="stat ${t.cls}">${t.gapProm > 0 ? '+' : ''}${t.gapProm.toFixed(1)}%</div>
+                        <div class="stat-label">somos ${t.etiqueta} ${esc(t.c)}</div>
+                    </div>
+                    <div class="split">
+                        ${t.win ? `<span class="w">✓ ${t.win} más baratos</span>` : ''}
+                        ${t.lose ? `<span class="l">✕ ${t.lose} más caros</span>` : ''}
+                        ${t.flat ? `<span class="f">= ${t.flat} igual</span>` : ''}
+                    </div>
+                    <div class="sku-count">${t.matches.length} SKU${t.matches.length === 1 ? '' : 's'} comparados con ${esc(t.c)}</div>
+                </div>`).join('')
                 : `<p class="state">Elegí al menos un competidor arriba para ver la comparación por cadena.</p>`;
         }
 
@@ -846,19 +1010,57 @@
                 svg += `<text x="${x(i)}" y="${H - 12}" font-size="11" fill="#6B7280" text-anchor="middle">${f.slice(5)}</text>`;
             });
 
-            const linea = (key, color) => {
+            // Etiqueta de precio fija arriba de cada punto: solo si hay pocas
+            // fechas (≤6), para no saturar el gráfico cuando se acumulen
+            // muchas corridas -- ahí el precio se ve al pasar el cursor/dedo
+            // sobre el punto (ver wireTooltip más abajo), no fijo en pantalla.
+            const mostrarEtiquetaFija = fechas.length <= 6;
+            const linea = (key, color, etiqueta, offsetY) => {
                 const pts = puntos.map((p, i) => p[key] !== null ? `${x(i)},${y(p[key])}` : null).filter(Boolean);
                 if (pts.length < 2) return '';
                 let s = `<polyline fill="none" stroke="${color}" stroke-width="3" points="${pts.join(' ')}"/>`;
-                puntos.forEach((p, i) => { if (p[key] !== null) s += `<circle cx="${x(i)}" cy="${y(p[key])}" r="4" fill="${color}"><title>${p.fecha}: ${money(p[key])}</title></circle>` });
+                puntos.forEach((p, i) => {
+                    if (p[key] === null) return;
+                    const cx = x(i), cy = y(p[key]);
+                    s += `<circle cx="${cx}" cy="${cy}" r="5" fill="${color}" data-fecha="${esc(p.fecha)}" data-precio="${esc(money(p[key]))}" data-serie="${esc(etiqueta)}"></circle>`;
+                    if (mostrarEtiquetaFija) {
+                        s += `<text class="point-label" x="${cx}" y="${cy + offsetY}" text-anchor="middle" fill="${color}">${money(p[key])}</text>`;
+                    }
+                });
                 return s;
             };
             const colorCliente = metaFor(CLIENTE).color;
-            svg += linea('cliente', colorCliente);
-            svg += linea('rival', '#DC2626');
+            svg += linea('cliente', colorCliente, chainText(CLIENTE), -12);
+            svg += linea('rival', '#DC2626', 'Competencia seleccionada', 20);
             svg += '</svg>';
+            svg += '<div class="chart-tooltip" id="trend-tooltip"></div>';
             $('trend-chart').innerHTML = svg;
             $('trend-legend').innerHTML = `<span><i class="dot" style="background:${colorCliente}"></i>${chainText(CLIENTE)} (promedio)</span><span><i class="dot" style="background:#DC2626"></i>Competencia seleccionada (promedio)</span>`;
+            wireTooltip($('trend-chart'));
+        }
+
+        // Tooltip compartido para cualquier gráfico de puntos con
+        // data-fecha/data-precio/data-serie en sus <circle> -- se re-conecta
+        // cada vez que se re-renderiza el gráfico (el innerHTML se
+        // reemplaza entero, así que los listeners viejos ya no existen).
+        function wireTooltip(contenedor) {
+            const tip = contenedor.querySelector('.chart-tooltip');
+            if (!tip) return;
+            contenedor.querySelectorAll('circle[data-precio]').forEach(c => {
+                const mostrar = e => {
+                    const rect = contenedor.getBoundingClientRect();
+                    const evt = e.touches ? e.touches[0] : e;
+                    tip.style.left = `${evt.clientX - rect.left}px`;
+                    tip.style.top = `${evt.clientY - rect.top}px`;
+                    tip.innerHTML = `${esc(c.dataset.serie)}<br>${esc(c.dataset.fecha)} · ${esc(c.dataset.precio)}`;
+                    tip.classList.add('show');
+                };
+                c.addEventListener('mouseenter', mostrar);
+                c.addEventListener('mousemove', mostrar);
+                c.addEventListener('mouseleave', () => tip.classList.remove('show'));
+                c.addEventListener('touchstart', e => { mostrar(e); e.preventDefault(); }, { passive: false });
+            });
+            contenedor.addEventListener('touchend', () => tip.classList.remove('show'));
         }
 
         function renderAlertas() {
@@ -1059,6 +1261,121 @@
                 $('status').innerHTML = `No se pudieron cargar los datos: ${esc(e.message)}`;
             }
         }
+
+        // ---- Pestañas ----
+        function activarTab(nombre) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === nombre));
+            document.querySelectorAll('.tab-panel').forEach(p => p.hidden = p.dataset.tab !== nombre);
+        }
+        document.querySelectorAll('.tab-btn').forEach(b => b.onclick = () => activarTab(b.dataset.tab));
+
+        // ---- Histórico por SKU -- buscador independiente de los filtros de ----
+        // ---- arriba (categoría / competidores elegidos): siempre busca sobre ----
+        // ---- todos los productos con match confirmado, y al graficar usa TODAS ----
+        // ---- las cadenas trackeadas para ese producto, no solo las tildadas. ----
+        let skuSeleccionado = null;
+
+        function renderSkuSuggestions(texto) {
+            const box = $('sku-suggestions');
+            if (!texto || texto.trim().length < 2) { box.hidden = true; box.innerHTML = ''; return; }
+            const encontrados = TODAS_COMPARACIONES.filter(c => norm(c.nombre).includes(norm(texto))).slice(0, 8);
+            if (!encontrados.length) {
+                box.innerHTML = `<div style="padding:12px 14px" class="muted">Sin resultados para "${esc(texto)}".</div>`;
+                box.hidden = false;
+                return;
+            }
+            box.innerHTML = encontrados.map(c => `<button type="button" data-clave="${esc(c.clave)}"><img src="${esc(c.imagen)}" onerror="this.style.display='none'"><span class="sk-name">${esc(c.nombre)}</span><span class="sk-cat-tag">${esc(c.categoria)}</span></button>`).join('');
+            box.hidden = false;
+            box.querySelectorAll('button[data-clave]').forEach(b => b.onclick = () => seleccionarSku(b.dataset.clave));
+        }
+
+        function seleccionarSku(clave) {
+            skuSeleccionado = clave;
+            $('sku-suggestions').hidden = true;
+            $('sku-search').value = '';
+            renderHistoricoSku();
+        }
+
+        function renderHistoricoSku() {
+            const el = $('sku-detail');
+            if (!skuSeleccionado) return;
+            const filas = DATA.productos.filter(p => p.producto_clave === skuSeleccionado);
+            if (!filas.length) {
+                el.innerHTML = `<p class="state">No encontramos ese producto en los datos actuales.</p>`;
+                skuSeleccionado = null;
+                return;
+            }
+            const ref = filas.find(p => p.imagen) || filas[0];
+
+            // Snapshot de precio actual por cadena -- Farmacorp primero, el
+            // resto alfabético.
+            const chipsPrecio = [...filas]
+                .sort((a, b) => (a.cadena === CLIENTE ? -1 : b.cadena === CLIENTE ? 1 : a.cadena.localeCompare(b.cadena)))
+                .map(p => `<div class="sku-price-chip" style="border-color:${metaFor(p.cadena).color}55">${chainInitials(p.cadena, 18)}<span>${esc(p.cadena)}</span><strong>${money(p.precio_oferta)}</strong></div>`)
+                .join('');
+
+            // Histórico por cadena -- TODAS las que trackean este producto,
+            // sin importar la selección de "Comparar contra" de arriba.
+            const porCadena = {};
+            filas.forEach(p => {
+                const hist = historialDe(p);
+                if (hist.length) porCadena[p.cadena] = hist.slice().sort((a, b) => a.fecha.localeCompare(b.fecha));
+            });
+            const fechas = [...new Set(Object.values(porCadena).flat().map(h => h.fecha))].sort();
+
+            let graficoHtml;
+            if (fechas.length < 2) {
+                graficoHtml = `<p class="state">Todavía no hay suficiente histórico para este producto (se necesitan al menos 2 corridas en días distintos).</p>`;
+            } else {
+                const W = 1100, H = 290, pad = { l: 70, r: 20, t: 20, b: 40 };
+                const todos = Object.values(porCadena).flat().map(h => h.precio);
+                const lo = Math.min(...todos), hi = Math.max(...todos), span = (hi - lo) || 1;
+                const x = f => pad.l + fechas.indexOf(f) * (W - pad.l - pad.r) / (fechas.length - 1);
+                const y = v => pad.t + (hi - v) * (H - pad.t - pad.b) / span;
+                let svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">`;
+                for (let i = 0; i < 5; i++) {
+                    const yy = pad.t + i * (H - pad.t - pad.b) / 4;
+                    svg += `<line x1="${pad.l}" y1="${yy}" x2="${W - pad.r}" y2="${yy}" stroke="#E7EAF3"/>`;
+                    svg += `<text x="${pad.l - 10}" y="${yy + 4}" font-size="11" fill="#6B7280" text-anchor="end">${money(hi - i * span / 4)}</text>`;
+                }
+                const anchoDisp = (document.querySelector('#sku-detail .chart-wrap') || {}).clientWidth || window.innerWidth;
+                const pasoFechas = anchoDisp < 420 ? Math.ceil(fechas.length / 4) : anchoDisp < 700 ? Math.ceil(fechas.length / 6) : 1;
+                fechas.forEach((f, i) => {
+                    if (i % pasoFechas !== 0 && i !== fechas.length - 1) return;
+                    svg += `<text x="${x(f)}" y="${H - 12}" font-size="11" fill="#6B7280" text-anchor="middle">${f.slice(5)}</text>`;
+                });
+                const mostrarEtiquetaFija = fechas.length <= 6;
+                Object.entries(porCadena).forEach(([cadena, hist], i) => {
+                    const color = metaFor(cadena).color;
+                    const pts = hist.map(h => `${x(h.fecha)},${y(h.precio)}`);
+                    if (pts.length >= 2) svg += `<polyline fill="none" stroke="${color}" stroke-width="3" points="${pts.join(' ')}"/>`;
+                    hist.forEach(h => {
+                        const cx = x(h.fecha), cy = y(h.precio);
+                        svg += `<circle cx="${cx}" cy="${cy}" r="5" fill="${color}" data-fecha="${esc(h.fecha)}" data-precio="${esc(money(h.precio))}" data-serie="${esc(cadena)}"></circle>`;
+                        if (mostrarEtiquetaFija) svg += `<text class="point-label" x="${cx}" y="${cy + (i % 2 ? 20 : -12)}" text-anchor="middle" fill="${color}">${money(h.precio)}</text>`;
+                    });
+                });
+                svg += '</svg>';
+                svg += '<div class="chart-tooltip" id="sku-tooltip"></div>';
+                graficoHtml = `<div class="chart-wrap">${svg}</div>
+                    <div class="legend">${Object.keys(porCadena).map(c => `<span><i class="dot" style="background:${metaFor(c).color}"></i>${esc(c)}</span>`).join('')}</div>`;
+            }
+
+            el.innerHTML = `
+                <div class="sku-snapshot">
+                    <img src="${esc(ref.imagen)}" onerror="this.style.display='none'">
+                    <div>
+                        <div class="sk-title">${esc(ref.nombre)}</div>
+                        <div class="sk-cat">${esc(ref.categoria || ref.subcategoria || 'Sin categoría')}</div>
+                    </div>
+                </div>
+                <div class="sku-price-row">${chipsPrecio}</div>
+                ${graficoHtml}`;
+            if (fechas.length >= 2) wireTooltip(el);
+        }
+
+        $('sku-search').oninput = e => renderSkuSuggestions(e.target.value);
+        document.addEventListener('click', e => { if (!e.target.closest('.sku-picker')) $('sku-suggestions').hidden = true; });
 
         $('search').oninput = e => { query = e.target.value; paginaTabla = TABLA_PAGE_SIZE; renderTabla(); };
         $('cat-global').onchange = e => {
