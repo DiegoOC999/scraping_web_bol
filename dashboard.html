@@ -70,7 +70,12 @@
 
         /* Isologo de marca como textura de fondo, detrás del título -- solo
            decorativo, opacidad baja para no competir con el texto. */
-        main { position: relative; overflow: hidden }
+        /* Antes: overflow:hidden (recortaba ambos ejes). Eso escondía en
+           silencio cualquier contenido que creciera más alto de lo previsto
+           (p.ej. una tarjeta de Top 5 con texto largo), cortándolo a la
+           mitad sin avisar. Solo hace falta contener el eje horizontal para
+           que el logo de fondo no sangre fuera de la pantalla. */
+        main { position: relative; overflow-x: hidden }
 
         .brand-watermark {
             position: absolute; top: -60px; right: -60px; width: 420px; height: 420px;
@@ -288,7 +293,7 @@
 
         .top5-card {
             display: flex; align-items: center; gap: 14px; padding: 12px;
-            border: 1px solid var(--border); border-radius: 16px
+            border: 1px solid var(--border); border-radius: 16px; flex-wrap: wrap
         }
 
         .top5-rank {
@@ -303,11 +308,14 @@
 
         .top5-img img { width: 100%; height: 100%; object-fit: contain }
 
-        .top5-info { flex: 1; min-width: 0 }
+        .top5-info { flex: 1 1 140px; min-width: 0 }
 
-        .top5-info .name { font-weight: 700; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+        .top5-info .name {
+            font-weight: 700; font-size: 13.5px; white-space: nowrap; overflow: hidden;
+            text-overflow: ellipsis
+        }
 
-        .top5-info .meta { font-size: 11.5px; color: var(--muted); margin-top: 2px }
+        .top5-info .meta { font-size: 11.5px; color: var(--muted); margin-top: 2px; overflow-wrap: anywhere }
 
         /* ---- Diverging category bars ---- */
         .cat-scale { display: grid; grid-template-columns: 190px 1fr 70px; gap: 14px; margin-bottom: 8px }
