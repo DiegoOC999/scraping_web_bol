@@ -643,6 +643,33 @@
                     </div>
                 </div>
             </section>
+
+            <section class="panel" id="outliers-panel" style="display:none">
+                <div class="panel-head">
+                    <div>
+                        <h2>⚠ Diferencias extremas excluidas</h2>
+                        <p class="muted">Estos matches tienen una diferencia de precio tan grande que casi seguro están mal
+                            emparejados (tamaño, variante o precio mal capturado) — no real competencia de precios. Se
+                            sacan de todos los promedios y del Top 5 de arriba para no ensuciarlos. Revisalos si algo no
+                            cuadra; si el match es correcto, avisá para ajustar el umbral.</p>
+                    </div>
+                </div>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Nuestro precio</th>
+                                <th>Precio rival</th>
+                                <th>Cadena</th>
+                                <th>Diferencia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="outliers-body"></tbody>
+                    </table>
+                </div>
+            </section>
         </div>
 
         <div class="tab-panel" data-tab="alertas" hidden>
@@ -805,17 +832,35 @@
                 : [];
         }
 
+        // Umbral de diferencia (%) a partir del cual un match se trata como
+        // "outlier" -- casi seguro un error de emparejamiento (tamaño o
+        // variante distinta) o un precio mal capturado, no competencia real.
+        // Asimétrico a propósito: un descuento real rara vez pasa -85% (sería
+        // casi regalado), mientras que "más caro" no tiene techo natural, así
+        // que se necesita más margen de ese lado antes de sospechar.
+        const OUTLIER_GAP_MAX = 200;
+        const OUTLIER_GAP_MIN = -85;
+
+        function calcularGap(precioPropio, precioRival) {
+            // null = no se puede calcular un % con sentido (precio en 0 o
+            // negativo de cualquiera de los dos lados -- pasa por glitches
+            // del scraper, no por promociones reales; antes esto se mostraba
+            // como "0% -- prácticamente igual", que es engañoso).
+            if (!(precioPropio > 0) || !(precioRival > 0)) return null;
+            const gap = (precioPropio - precioRival) / precioRival * 100;
+            return { gap, esOutlier: gap > OUTLIER_GAP_MAX || gap < OUTLIER_GAP_MIN };
+        }
+
         function construirComparaciones() {
             const grupos = agrupar(DATA.productos);
             const filas = [];
             grupos.forEach(g => {
                 const propio = g.find(p => p.cadena === CLIENTE);
-                const rivales = g.filter(p => SELECCION.has(p.cadena));
+                const rivales = g.filter(p => SELECCION.has(p.cadena) && p.precio_oferta > 0);
                 if (!propio || rivales.length === 0) return;
                 const mejorRival = [...rivales].sort((a, b) => a.precio_oferta - b.precio_oferta)[0];
-                const gap = propio.precio_oferta > 0
-                    ? (propio.precio_oferta - mejorRival.precio_oferta) / mejorRival.precio_oferta * 100
-                    : 0;
+                const calc = calcularGap(propio.precio_oferta, mejorRival.precio_oferta);
+                if (!calc) return; // precio propio inválido -- no hay nada que comparar
                 // Un precio por cada competidor seleccionado que también matcheó
                 // este producto -- así la tabla puede mostrar una columna por
                 // cadena en vez de perder info cuando hay 3+ matches.
@@ -830,7 +875,8 @@
                     precioRival: mejorRival.precio_oferta,
                     rivalCadena: mejorRival.cadena,
                     porCadena,
-                    gap,
+                    gap: calc.gap,
+                    esOutlier: calc.esOutlier,
                     propioHist: historialDe(propio),
                     rivalesHist: rivales.flatMap(historialDe),
                 });
@@ -858,9 +904,20 @@
             const el = $('chain-cards');
             const cadenas = CADENAS.filter(c => SELECCION.has(c));
             const tarjetas = cadenas.map(c => {
-                const matches = COMPARACIONES.filter(cmp => cmp.porCadena[c] !== undefined);
-                if (matches.length === 0) return null;
-                const gaps = matches.map(cmp => (cmp.precioPropio - cmp.porCadena[c]) / cmp.porCadena[c] * 100);
+                const posibles = COMPARACIONES.filter(cmp => cmp.porCadena[c] !== undefined);
+                if (posibles.length === 0) return null;
+                // El gap "vs mejor rival" que ya trae cada fila puede no ser el
+                // mismo que el gap contra ESTA cadena puntual (si mejorRival es
+                // otra) -- por eso se recalcula acá, pero con el mismo filtro de
+                // outliers (calcularGap) para que "excluido" signifique lo mismo
+                // en todo el dashboard.
+                const evaluados = posibles
+                    .map(cmp => ({ cmp, calc: calcularGap(cmp.precioPropio, cmp.porCadena[c]) }))
+                    .filter(x => x.calc);
+                const validos = evaluados.filter(x => !x.calc.esOutlier);
+                const outliers = evaluados.filter(x => x.calc.esOutlier);
+                if (validos.length === 0) return null;
+                const gaps = validos.map(x => x.calc.gap);
                 const gapProm = gaps.reduce((a, b) => a + b, 0) / gaps.length;
                 const cls = gapProm > 1 ? 'lose' : gapProm < -1 ? 'win' : 'flat';
                 const etiqueta = gapProm > 1 ? 'más caros que' : gapProm < -1 ? 'más baratos que' : 'prácticamente igual a';
@@ -870,7 +927,7 @@
                 // 60% perdidos por mucho, que resulta en un promedio chico.
                 let win = 0, lose = 0, flat = 0;
                 gaps.forEach(g => { if (g > 1) lose++; else if (g < -1) win++; else flat++; });
-                return { c, gapProm, cls, etiqueta, matches, win, lose, flat };
+                return { c, gapProm, cls, etiqueta, n: validos.length, win, lose, flat, outliers: outliers.length };
             }).filter(Boolean);
 
             // Peor primero: lo que más urge revisar arriba, sin que el gerente
@@ -890,20 +947,24 @@
                         ${t.lose ? `<span class="l">✕ ${t.lose} más caros</span>` : ''}
                         ${t.flat ? `<span class="f">= ${t.flat} igual</span>` : ''}
                     </div>
-                    <div class="sku-count">${t.matches.length} SKU${t.matches.length === 1 ? '' : 's'} comparados con ${esc(t.c)}</div>
+                    <div class="sku-count">${t.n} SKU${t.n === 1 ? '' : 's'} comparados con ${esc(t.c)}${t.outliers ? ` · <span title="Diferencia de precio tan grande que probablemente el match está mal -- ver tabla de outliers más abajo">⚠ ${t.outliers} excluido${t.outliers === 1 ? '' : 's'}</span>` : ''}</div>
                 </div>`).join('')
                 : `<p class="state">Elegí al menos un competidor arriba para ver la comparación por cadena.</p>`;
         }
 
         function renderMetricas() {
-            const total = COMPARACIONES.length;
-            const wins = COMPARACIONES.filter(c => c.gap < -0.01).length;
-            const losses = COMPARACIONES.filter(c => c.gap > 0.01).length;
-            const gaps = COMPARACIONES.map(c => c.gap);
+            const usables = COMPARACIONES.filter(c => !c.esOutlier);
+            const total = usables.length;
+            const wins = usables.filter(c => c.gap < -0.01).length;
+            const losses = usables.filter(c => c.gap > 0.01).length;
+            const gaps = usables.map(c => c.gap);
             const gapProm = gaps.length ? gaps.reduce((a, b) => a + b, 0) / gaps.length : 0;
+            const excluidos = COMPARACIONES.length - total;
 
             $('m-total').textContent = total.toLocaleString('es-BO');
-            $('m-total-sub').textContent = total ? 'productos con match confirmado' : 'sin matches confirmados contra la selección actual';
+            $('m-total-sub').textContent = total
+                ? `productos con match confirmado${excluidos ? ` (+${excluidos} excluido${excluidos === 1 ? '' : 's'} por diferencia extrema)` : ''}`
+                : 'sin matches confirmados contra la selección actual';
             $('m-win').textContent = total ? `${(wins / total * 100).toFixed(0)}%` : '—';
             $('m-win-sub').textContent = `${wins} de ${total} SKUs`;
             $('m-lose').textContent = total ? `${(losses / total * 100).toFixed(0)}%` : '—';
@@ -916,7 +977,7 @@
             // vez -- con pocos SKUs comparados (menos de 10) el top 5 de cada
             // lado se pisaba. Se ordena una sola vez y se reparte sin overlap:
             // los N mejores van a "ventaja", los N peores a "riesgo", N tope 5.
-            const ordenados = [...COMPARACIONES].sort((a, b) => a.gap - b.gap);
+            const ordenados = COMPARACIONES.filter(c => !c.esOutlier).sort((a, b) => a.gap - b.gap);
             const total = ordenados.length;
             let ordenVentaja = [], ordenRiesgo = [];
             if (total === 1) {
@@ -941,7 +1002,7 @@
 
         function renderCategorias() {
             const porCat = new Map();
-            COMPARACIONES.forEach(c => {
+            COMPARACIONES.filter(c => !c.esOutlier).forEach(c => {
                 if (!porCat.has(c.categoria)) porCat.set(c.categoria, []);
                 porCat.get(c.categoria).push(c);
             });
@@ -1064,7 +1125,10 @@
         }
 
         function renderAlertas() {
-            const alertas = COMPARACIONES.filter(c => c.gap > umbral).sort((a, b) => b.gap - a.gap);
+            // Sin esOutlier: un match mal emparejado con +900% de diferencia
+            // no es una alerta de precio real, es ruido de datos -- ver
+            // sección "Diferencias extremas excluidas" en Resumen.
+            const alertas = COMPARACIONES.filter(c => !c.esOutlier && c.gap > umbral).sort((a, b) => b.gap - a.gap);
             $('alert-body').innerHTML = alertas.map(c => `<tr>
                 <td class="prod-name">${esc(c.nombre)}</td>
                 <td>${esc(c.categoria)}</td>
@@ -1140,6 +1204,26 @@
             COMPARACIONES = catGlobal === 'Todas' ? TODAS_COMPARACIONES : TODAS_COMPARACIONES.filter(c => c.categoria === catGlobal);
         }
 
+        // Tabla de transparencia para los matches marcados esOutlier (ver
+        // calcularGap): no se borran, se muestran acá aparte para que se
+        // puedan auditar -- si alguno en realidad es un match correcto,
+        // avisar para ajustar OUTLIER_GAP_MAX/MIN en vez de perder el dato.
+        function renderOutliers() {
+            const outliers = COMPARACIONES.filter(c => c.esOutlier);
+            const panel = $('outliers-panel');
+            if (!outliers.length) { panel.style.display = 'none'; return; }
+            panel.style.display = '';
+            $('outliers-body').innerHTML = [...outliers].sort((a, b) => Math.abs(b.gap) - Math.abs(a.gap)).map(c => `
+                <tr>
+                    <td>${esc(c.nombre)}</td>
+                    <td>${esc(c.categoria)}</td>
+                    <td>${money(c.precioPropio)}</td>
+                    <td>${money(c.precioRival)}</td>
+                    <td><span class="chain-tag">${esc(c.rivalCadena)}</span></td>
+                    <td style="color:var(--red);font-weight:700">${c.gap > 0 ? '+' : ''}${c.gap.toFixed(1)}%</td>
+                </tr>`).join('');
+        }
+
         function actualizar() {
             renderChips();
             TODAS_COMPARACIONES = construirComparaciones();
@@ -1151,6 +1235,7 @@
             renderTop5();
             renderComparacionPorCadena();
             renderCategorias();
+            renderOutliers();
             renderAlertas();
             renderTabla();
         }
