@@ -353,7 +353,7 @@
 
         .cat-row .cat-n { font-size: 11px; color: var(--muted); font-weight: 500 }
 
-        .divbar { position: relative; height: 26px; background: var(--bg); border-radius: 6px; overflow: hidden; border: 1px solid var(--border) }
+        .divbar { position: relative; height: 30px; background: var(--bg); border-radius: 6px; overflow: hidden; border: 1px solid var(--border) }
 
         .divbar .mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: #C7CCDB; z-index: 1 }
 
@@ -364,6 +364,21 @@
         .divbar .fill.lose { background: var(--red); left: 50% }
 
         .cat-row .cat-gap { font-size: 12.5px; font-weight: 800; text-align: right }
+
+        /* Categoría "macro" plegable -- adentro, un desglose por la
+           etiqueta de categoría cruda original (ver renderCategorias) para
+           poder comparar, ej., "Insumos Médicos" vs "Suplementos" dentro de
+           "Salud y Medicamentos" en vez de un solo promedio que los tapa. */
+        .cat-details { border-radius: 8px }
+        .cat-details summary { cursor: pointer; list-style: none }
+        .cat-details summary::-webkit-details-marker { display: none }
+        .cat-details summary::marker { content: '' }
+        .cat-toggle { display: inline-block; width: 10px; transition: transform .15s; color: var(--muted) }
+        .cat-details[open] .cat-toggle { transform: rotate(90deg) }
+        .cat-subrows { display: grid; gap: 6px; margin: 8px 0 2px; padding-left: 18px; border-left: 2px solid var(--border) }
+        .cat-row-sub { grid-template-columns: 172px 1fr 70px; opacity: .88 }
+        .cat-row-sub .cat-label { font-size: 12px; font-weight: 600 }
+        .cat-row-sub .divbar { height: 24px }
 
         .cat-legend { display: flex; justify-content: space-between; margin-top: 4px; font-size: 11px; color: var(--muted) }
 
@@ -481,7 +496,8 @@
             .container { padding: 0 16px }
             .metrics-grid { grid-template-columns: 1fr }
             .panel { padding: 18px; border-radius: 18px }
-            .cat-scale, .cat-row { grid-template-columns: 110px 1fr 56px; gap: 8px }
+            .cat-scale, .cat-row, .cat-row-sub { grid-template-columns: 110px 1fr 56px; gap: 8px }
+            .cat-subrows { padding-left: 12px }
             .nav { padding: 12px 0 }
             .logo-icon { width: 38px; height: 38px; border-radius: 11px }
             .logo-text { font-size: 15px }
@@ -496,7 +512,7 @@
             .chain-card .stat { font-size: 24px }
             .nav-chip { font-size: 11.5px; padding: 8px 12px }
             .logo-sub { display: none }
-            .cat-scale, .cat-row { grid-template-columns: 88px 1fr 46px; gap: 6px }
+            .cat-scale, .cat-row, .cat-row-sub { grid-template-columns: 88px 1fr 46px; gap: 6px }
             .cat-row .cat-label { font-size: 11.5px }
             .btn-primary, .btn-secondary, .btn-more { font-size: 12.5px; padding: 0 14px }
             .top5-img { width: 42px; height: 42px }
@@ -603,7 +619,7 @@
                 <div class="panel-head">
                     <div>
                         <h2>Dispersión por categoría</h2>
-                        <p class="muted">Brecha de precio promedio, ordenada de mayor riesgo a mayor ventaja.</p>
+                        <p class="muted">Brecha de precio promedio, ordenada de mayor riesgo a mayor ventaja. Tocá una categoría para abrir su desglose por segmento.</p>
                     </div>
                 </div>
                 <div class="cat-scale">
@@ -814,6 +830,31 @@
         const esc = x => String(x ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
         const norm = x => String(x || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 
+        // Las imágenes de producto (campo "imagen") vienen directo del sitio
+        // de cada cadena -- fotos a resolución completa (a veces 1000px+)
+        // que acá se muestran como miniatura de 60-160px. Eso es lo que hace
+        // que "tarde mucho" en cargar: se está bajando la foto entera para
+        // mostrar un ícono chico. imgUrl() pide una versión ya redimensionada
+        // y comprimida (webp) en vez de la original:
+        //  - si es una imagen de Shopify (cdn.shopify.com), el mismo CDN de
+        //    Shopify sabe redimensionar con "?width=", así que se usa eso
+        //    directo (más rápido, sin depender de un tercero);
+        //  - para cualquier otro origen, se pasa por images.weserv.nl (proxy
+        //    gratuito de redimensionado+compresión, ampliamente usado) que
+        //    cachea el resultado.
+        function imgUrl(url, ancho) {
+            if (!url) return '';
+            try {
+                const u = new URL(url, location.href);
+                if (/(^|\.)cdn\.shopify\.com$/i.test(u.hostname)) {
+                    u.searchParams.set('width', ancho);
+                    return u.toString();
+                }
+                if (!/^https?:$/i.test(u.protocol)) return url;
+                return `https://images.weserv.nl/?url=${encodeURIComponent(u.href.replace(/^https?:\/\//i, ''))}&w=${ancho}&q=75&output=webp`;
+            } catch (e) { return url; }
+        }
+
         let DATA, CADENAS = [], SELECCION = new Set(), TODAS_COMPARACIONES = [], COMPARACIONES = [];
         let query = '', catGlobal = 'Todas', sortMode = 'gap-desc', umbral = 10;
 
@@ -990,7 +1031,7 @@
             }
             const card = (c, i, tipo) => `<div class="top5-card">
                 <div class="top5-rank">${i + 1}</div>
-                <div class="top5-img"><img src="${esc(c.imagen)}" onerror="this.style.display='none'" loading="lazy"></div>
+                <div class="top5-img"><img src="${esc(imgUrl(c.imagen, 104))}" onerror="this.style.display='none'" loading="lazy" decoding="async"></div>
                 <div class="top5-info">
                     <div class="name">${esc(c.nombre)}</div>
                     <div class="meta">${esc(c.categoria)} · ${money(c.precioPropio)} vs ${money(c.precioRival)} <span class="chain-tag">${esc(c.rivalCadena)}</span></div>
@@ -1001,7 +1042,48 @@
             $('top5-lose').innerHTML = ordenRiesgo.length ? ordenRiesgo.map((c, i) => card(c, i, 'lose')).join('') : `<p class="state">Sin datos suficientes todavía.</p>`;
         }
 
+        // En la práctica casi todas las brechas reales están entre 0% y ~5%
+        // (rara vez pasan de 8%); con una escala lineal a ±30% esas brechas
+        // típicas de 1-2% quedaban como una línea casi invisible pegada al
+        // centro. CAP baja el techo de la escala a algo realista, y además
+        // se usa raíz cuadrada (no lineal) para "estirar" visualmente las
+        // brechas chicas -- que son la mayoría -- sin perder la noción de
+        // que una brecha de 8%+ es mucho más grave que una de 1%.
+        const CAP = 8; // % de brecha a partir del cual la barra queda al 100%
+        const PISO_VISIBLE = 4; // ancho mínimo (%) para que hasta una brecha de 0.1% se note
+
+        function barraGap(gapProm) {
+            const esVentaja = gapProm < 0;
+            const abs = Math.abs(gapProm);
+            if (abs < 0.05) return { esVentaja, pct: 0 };
+            const norm = Math.min(abs, CAP) / CAP;
+            const pct = Math.max(PISO_VISIBLE, Math.sqrt(norm) * 50);
+            return { esVentaja, pct };
+        }
+
+        // La barra + el % (segunda y tercera columna del grid) -- se reusa
+        // igual para la fila de categoría "macro" y para cada sub-fila.
+        function barraGapHtml(gapProm) {
+            const { esVentaja, pct } = barraGap(gapProm);
+            return `<div class="divbar"><div class="mid"></div><div class="fill ${esVentaja ? 'win' : 'lose'}" style="width:${pct}%"></div></div>
+                <div class="cat-gap" style="color:${esVentaja ? 'var(--green)' : 'var(--red)'}">${gapProm > 0 ? '+' : ''}${gapProm.toFixed(1)}%</div>`;
+        }
+
+        // Fila completa de una sola línea (etiqueta + barra + %) -- para
+        // categorías sin sub-desglose y para cada sub-fila adentro de una
+        // categoría plegable.
+        function filaGap(etiqueta, n, gapProm) {
+            return `<div><div class="cat-label">${esc(etiqueta)}</div><div class="cat-n">${n} SKU${n === 1 ? '' : 's'}</div></div>${barraGapHtml(gapProm)}`;
+        }
+
         function renderCategorias() {
+            // Nivel 1: categoría "macro" (categorias.js). Una macro como
+            // "Salud y Medicamentos" mezcla segmentos muy distintos --
+            // Insumos Médicos, Suplementos, etc. -- así que adentro (nivel
+            // 2, plegable) se desglosa por la etiqueta de categoría CRUDA
+            // original de cada cadena, para comparar ej. Farmacorp vs
+            // Chávez segmento por segmento en vez de un solo promedio que
+            // los tapa a todos.
             const porCat = new Map();
             COMPARACIONES.filter(c => !c.esOutlier).forEach(c => {
                 const cat = CategoriasMacro.macroCategoria(c.categoria);
@@ -1010,18 +1092,39 @@
             });
             const filas = [...porCat.entries()].map(([cat, items]) => {
                 const gapProm = items.reduce((a, b) => a + b.gap, 0) / items.length;
-                return { cat, n: items.length, gapProm };
+                const porSub = new Map();
+                items.forEach(c => {
+                    const sub = c.categoria || 'Sin categoría';
+                    if (!porSub.has(sub)) porSub.set(sub, []);
+                    porSub.get(sub).push(c);
+                });
+                const subs = [...porSub.entries()].map(([sub, subItems]) => ({
+                    sub, n: subItems.length,
+                    gapProm: subItems.reduce((a, b) => a + b.gap, 0) / subItems.length,
+                })).sort((a, b) => b.gapProm - a.gapProm);
+                return { cat, n: items.length, gapProm, subs };
             }).sort((a, b) => b.gapProm - a.gapProm);
 
-            const CAP = 30; // % de brecha a partir del cual la barra queda al 100%
+            // Si el filtro de categoría de arriba ya dejó una sola macro
+            // categoría a la vista, abrirla sola de entrada -- es obvio que
+            // el desglose de adentro es justo lo que se quiere ver.
+            const abrirSola = filas.length === 1;
+
             $('cat-rows').innerHTML = filas.length ? filas.map(f => {
-                const esVentaja = f.gapProm < 0;
-                const pct = Math.min(Math.abs(f.gapProm), CAP) / CAP * 50;
-                return `<div class="cat-row">
-                    <div><div class="cat-label">${esc(f.cat)}</div><div class="cat-n">${f.n} SKU${f.n === 1 ? '' : 's'}</div></div>
-                    <div class="divbar"><div class="mid"></div><div class="fill ${esVentaja ? 'win' : 'lose'}" style="width:${pct}%"></div></div>
-                    <div class="cat-gap" style="color:${esVentaja ? 'var(--green)' : 'var(--red)'}">${f.gapProm > 0 ? '+' : ''}${f.gapProm.toFixed(1)}%</div>
-                </div>`;
+                const tieneSubs = f.subs.length > 1; // una sola sub-etiqueta = nada que desglosar
+                const subrows = tieneSubs
+                    ? `<div class="cat-subrows">${f.subs.map(s => `<div class="cat-row cat-row-sub">${filaGap(s.sub, s.n, s.gapProm)}</div>`).join('')}</div>`
+                    : '';
+                if (!tieneSubs) {
+                    return `<div class="cat-row">${filaGap(f.cat, f.n, f.gapProm)}</div>`;
+                }
+                return `<details class="cat-details"${abrirSola ? ' open' : ''}>
+                    <summary class="cat-row">
+                        <div><div class="cat-label"><span class="cat-toggle">▸</span>${esc(f.cat)}</div><div class="cat-n">${f.n} SKU${f.n === 1 ? '' : 's'} · ${f.subs.length} subcategorías</div></div>
+                        ${barraGapHtml(f.gapProm)}
+                    </summary>
+                    ${subrows}
+                </details>`;
             }).join('') : `<p class="state">Todavía no hay categorías con productos matcheados contra la selección actual.</p>`;
         }
 
@@ -1374,7 +1477,7 @@
                 box.hidden = false;
                 return;
             }
-            box.innerHTML = encontrados.map(c => `<button type="button" data-clave="${esc(c.clave)}"><img src="${esc(c.imagen)}" onerror="this.style.display='none'"><span class="sk-name">${esc(c.nombre)}</span><span class="sk-cat-tag">${esc(c.categoria)}</span></button>`).join('');
+            box.innerHTML = encontrados.map(c => `<button type="button" data-clave="${esc(c.clave)}"><img src="${esc(imgUrl(c.imagen, 72))}" onerror="this.style.display='none'" loading="lazy" decoding="async"><span class="sk-name">${esc(c.nombre)}</span><span class="sk-cat-tag">${esc(c.categoria)}</span></button>`).join('');
             box.hidden = false;
             box.querySelectorAll('button[data-clave]').forEach(b => b.onclick = () => seleccionarSku(b.dataset.clave));
         }
@@ -1453,7 +1556,7 @@
 
             el.innerHTML = `
                 <div class="sku-snapshot">
-                    <img src="${esc(ref.imagen)}" onerror="this.style.display='none'">
+                    <img src="${esc(imgUrl(ref.imagen, 160))}" onerror="this.style.display='none'" loading="lazy" decoding="async">
                     <div>
                         <div class="sk-title">${esc(ref.nombre)}</div>
                         <div class="sk-cat">${esc(ref.categoria || ref.subcategoria || 'Sin categoría')}</div>
